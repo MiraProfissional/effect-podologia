@@ -1,0 +1,24 @@
+{
+  "name": "effect-podologia",
+  "version": "1.0.0",
+  "description": "effect podologia landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiraProfissional/effect-podologia.git"
+  },
+  "author": "João Vitor Garcia Mira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MiraProfissional/effect-podologia/issues"
+  },
+  "homepage": "https://github.com/MiraProfissional/effect-podologia#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}
