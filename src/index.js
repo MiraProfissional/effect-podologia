@@ -1,33 +1,39 @@
-const options = {
-    threshold: 0,
-}
-
-const homeSection = document.querySelector('#home')
-
+const homeSection = document.querySelector("#home")
 const navLinks = document.querySelectorAll("nav a")
-
 const firstNavLink = navLinks[0]
 
-const spansFirstNavLink = firstNavLink.querySelectorAll('span')
+const activateLink = (link) => {
+    link.classList.remove("text-redOrangeLight2")
+    link.classList.add("text-redOrangeDark")
+    const spansLink = link.querySelectorAll("span")
+    spansLink[1].classList.add("bg-redOrangeDark", "w-full");
+}
+
+const deactivateLink = (link) => {
+    link.classList.remove("text-redOrangeDark")
+    link.classList.add("text-redOrangeLight2");
+    const spansLink = link.querySelectorAll("span");
+    spansLink[1].classList.remove("bg-redOrangeDark", "w-full");
+};
 
 const activeFirstItemNavbarHover = (entries) => {
     if(entries[0].isIntersecting) {
-        firstNavLink.classList.remove('text-redOrangeLight2')
-        firstNavLink.classList.add('text-redOrangeDark')
-        spansFirstNavLink[1].classList.add('bg-redOrangeDark', 'w-full')
+        activateLink(firstNavLink)
     }
 }
 
-const observer = new IntersectionObserver(activeFirstItemNavbarHover, options)
+const observerOptions = {
+    threshold: 0,
+}
+
+const observer = new IntersectionObserver(activeFirstItemNavbarHover, observerOptions)
 
 observer.observe(homeSection)
 
 navLinks.forEach((link) => {
     link.addEventListener("mouseover", () => {
         if (link !== firstNavLink) {
-            firstNavLink.classList.remove("text-redOrangeDark")
-            firstNavLink.classList.add("text-redOrangeLight2")
-            spansFirstNavLink[1].classList.remove("bg-redOrangeDark", "w-full")
+            deactivateLink(firstNavLink)
         }
     })
 })
@@ -35,9 +41,7 @@ navLinks.forEach((link) => {
 navLinks.forEach((link) => {
     link.addEventListener("mouseout", () => {
         if (link !== firstNavLink) {
-            firstNavLink.classList.remove("text-redOrangeLight2")
-            firstNavLink.classList.add("text-redOrangeDark")
-            spansFirstNavLink[1].classList.add("bg-redOrangeDark", "w-full")
+            activateLink(firstNavLink)
         }
     })
 })
