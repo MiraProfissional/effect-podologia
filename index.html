@@ -6,19 +6,42 @@
   <title>Effect Podologia</title>
   <link href="./dist/styles.css" rel="stylesheet">
 </head>
-<body class="bg-redOrangeLight h-screen">
+<body class="bg-redOrangeLight1 h-screen">
   <header>
-      <h1>Effect Podologia</h1>
+      <h1 class="sr-only">Effect Podologia</h1>
+      <nav class="flex space-x-10 m-24">
+        <a href="#" class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark">
+            <span class="transition-transform duration-300 group-hover:-translate-y-1">INÍCIO</span>
+            <span class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#services" class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark">
+            <span class="transition-transform duration-300 group-hover:-translate-y-1">SERVIÇOS</span>
+            <span class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#infrastructure" class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark">
+            <span class="transition-transform duration-300 group-hover:-translate-y-1">INFRAESTRUTURA</span>
+            <span class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#reviews" class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark">
+            <span class="transition-transform duration-300 group-hover:-translate-y-1">AVALIAÇÃO</span>
+            <span class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#location" class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark">
+            <span class="transition-transform duration-300 group-hover:-translate-y-1">LOCALIZAÇÃO</span>
+            <span class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav>
   </header>
   <main>
-    <section>Seção 1</section>
-    <section>Seção 2</section>
-    <section>Seção 3</section>
-    <section>Seção 4</section>
-    <section>Seção 5</section>
+    <section id="home" class="h-screen">Seção 1</section>
+    <section id="services" class="h-screen">Seção 2</section>
+    <section id="infrastructure" class="h-screen">Seção 3</section>
+    <section id="reviews" class="h-screen">Seção 4</section>
+    <section id="location" class="h-screen">Seção 5</section>
   </main>
   <footer>
     <p>© 2025 Effect Podologia. Todos os direitos reservados. <br> Desenvolvido por <a href="https://www.linkedin.com/in/jvitor-gmira/">João Vitor Mira</a></p>
   </footer>
 </body>
+<script src="./src/index.js"></script>
 </html>
