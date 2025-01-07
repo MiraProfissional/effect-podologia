@@ -6,8 +6,11 @@ export default {
       colors: {
         redOrangeLight1: '#f5e7e4',
         redOrangeLight2: '#d19f92',
-        redOrange: '#87341a',
-        redOrangeDark: '#853420',
+        redOrangeLight3: '#c37b63',
+        redOrange1: '#b88d8b',
+        redOrange2: '#87341a',
+        redOrangeDark1: '#86341e',
+        redOrangeDark2: '#853420',
       },
     },
   },
