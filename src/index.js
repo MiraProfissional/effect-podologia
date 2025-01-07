@@ -4,16 +4,16 @@ const firstNavLink = navLinks[0];
 
 const activateLink = (link) => {
   link.classList.remove('text-redOrangeLight2');
-  link.classList.add('text-redOrangeDark2');
+  link.classList.add('text-redOrangeDark');
   const spansLink = link.querySelectorAll('span');
-  spansLink[1].classList.add('bg-redOrangeDark2', 'w-full');
+  spansLink[1].classList.add('bg-redOrangeDark', 'w-full');
 };
 
 const deactivateLink = (link) => {
-  link.classList.remove('text-redOrangeDark2');
+  link.classList.remove('text-redOrangeDark');
   link.classList.add('text-redOrangeLight2');
   const spansLink = link.querySelectorAll('span');
-  spansLink[1].classList.remove('bg-redOrangeDark2', 'w-full');
+  spansLink[1].classList.remove('bg-redOrangeDark', 'w-full');
 };
 
 const activeFirstItemNavbarHover = (entries) => {
