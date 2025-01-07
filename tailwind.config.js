@@ -7,6 +7,7 @@ export default {
         redOrangeLight1: '#f5e7e4',
         redOrangeLight2: '#d19f92',
         redOrangeLight3: '#c37b63',
+        redOrangeLight4: '#e4d1cd',
         redOrange1: '#b88d8b',
         redOrange2: '#87341a',
         redOrangeDark1: '#86341e',
