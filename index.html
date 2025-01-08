@@ -1,24 +1,292 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Effect Podologia</title>
-  <link href="./dist/styles.css" rel="stylesheet">
-</head>
-<body class="bg-redOrangeLight h-screen">
-  <header>
-      <h1>Effect Podologia</h1>
-  </header>
-  <main>
-    <section>Seção 1</section>
-    <section>Seção 2</section>
-    <section>Seção 3</section>
-    <section>Seção 4</section>
-    <section>Seção 5</section>
-  </main>
-  <footer>
-    <p>© 2025 Effect Podologia. Todos os direitos reservados. <br> Desenvolvido por <a href="https://www.linkedin.com/in/jvitor-gmira/">João Vitor Mira</a></p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Effect Podologia</title>
+    <link href="./dist/styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-redOrangeLight1 h-screen">
+    <header>
+      <h1 class="sr-only">Effect Podologia</h1>
+      <nav class="flex space-x-10 m-24">
+        <a
+          href="#"
+          class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark"
+        >
+          <span
+            class="transition-transform duration-300 group-hover:-translate-y-1"
+            >INÍCIO</span
+          >
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a
+          href="#services"
+          class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark"
+        >
+          <span
+            class="transition-transform duration-300 group-hover:-translate-y-1"
+            >SERVIÇOS</span
+          >
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a
+          href="#infrastructure"
+          class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark"
+        >
+          <span
+            class="transition-transform duration-300 group-hover:-translate-y-1"
+            >INFRAESTRUTURA</span
+          >
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a
+          href="#reviews"
+          class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark"
+        >
+          <span
+            class="transition-transform duration-300 group-hover:-translate-y-1"
+            >AVALIAÇÃO</span
+          >
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a
+          href="#location"
+          class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark"
+        >
+          <span
+            class="transition-transform duration-300 group-hover:-translate-y-1"
+            >LOCALIZAÇÃO</span
+          >
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="h-screen px-24 flex space-x-14">
+        <div class="w-screen flex flex-col">
+          <div class="flex h-16">
+            <div class="w-1/3">
+              <img
+                src="./src/images/logos/terracotta-horizontal.png"
+                alt="Foto da Podóloga"
+                class="h-full object-cover"
+              />
+            </div>
+            <div class="w-2/3"></div>
+          </div>
+          <div class="mt-3">
+            <h2
+              class="text-[44px] leading-none font-bold bg-gradient-to-r from-redOrangeDark to-redOrangeLight2 inline-block text-transparent bg-clip-text mb-2 pb-2"
+            >
+              SUA CLÍNICA DE PODOLOGIA DE CONFIANÇA
+            </h2>
+            <p class="text-2xl text-redOrange2">
+              Podóloga com mais de 15 anos de experiência, dedicada ao cuidado e
+              à saúde dos pés. Especialista em tratamentos de
+              <strong>
+                unhas encravadas, calosidades, dores nos pés e prevenção de
+                problemas podológicos.
+              </strong>
+              Comprometida com o bem-estar e qualidade de vida dos pacientes,
+              oferecendo atendimento humanizado e eficaz
+            </p>
+          </div>
+          <div class="flex justify-between mt-10">
+            <button
+              class="border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-lg text-[22px] text-white font-bold px-4 py-2"
+            >
+              AGENDE SEU HORÁRIO
+            </button>
+            <button
+              class="border-solid border-[3px] border-gray-400 rounded-3xl bg-redOrangeLight2 shadow-lg text-[22px] text-redOrangeDark font-bold px-4 py-2"
+            >
+              NOSSOS PROCEDIMENTOS
+            </button>
+          </div>
+        </div>
+        <div class="w-screen flex flex-col">
+          <figure>
+            <img
+              src="./src/images/podologa-example.jpg"
+              alt="Foto da podóloga Luana Garcia Medeiros"
+              class="rounded-2xl shadow-lg"
+            />
+            <figcaption class="mt-2">
+              <h2 class="text-2xl text-redOrangeLight3 font-bold">
+                LUANA GARCIA MEDEIROS
+              </h2>
+              <h3 class="text-lg text-redOrangeLight2 m-0">PODÓLOGA</h3>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="services" class="h-screen">
+        <div
+          class="bg-[url('/src/images/background-topbar-section-2.jpg')] bg-center bg-cover h-1/4 w-full flex flex-col items-start justify-center pl-24 pr-24"
+        >
+          <h2 class="text-4xl text-redOrangeDark">
+            <strong>Pare de sofrer</strong> <br />com unha encravada!
+          </h2>
+          <h3 class="text-2xl text-white font-bold">
+            Agende uma avaliação agora mesmo.
+          </h3>
+        </div>
+        <div class="flex flex-col mt-8 px-24">
+          <h2 class="text-center text-4xl text-redOrange2 mb-8">
+            Nossos principais procedimentos
+          </h2>
+          <div class="flex justify-between">
+            <div class="relative h-96 w-72 rounded-t-3xl shadow-xl bg-redOrangeLight4">
+              <figure class="h-3/5">
+                <img
+                  src="./src/images/service-unha-encravada.jpg"
+                  alt="Foto de tratamento de unha encravada"
+                  class="w-full h-3/4 object-cover rounded-t-3xl"
+                />
+                <figcaption class="p-2">
+                  <h3 class="font-bold text-redOrangeLight3 leading-none text-lg">
+                    TRATAMENTO DE UNHA ENCRAVADA
+                  </h3>
+                </figcaption>
+              </figure>
+              <p class="text-sm p-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
+                commodo nunc, vel placerat mi.
+              </p>
+              <span class="absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2"></span>
+            </div>
+            <div class="relative h-90 w-72 rounded-t-3xl shadow-xl bg-redOrangeLight4">
+              <figure class="h-3/5 w-full">
+                <img
+                  src="./src/images/service-calosidades.jpg"
+                  alt="Foto de tratamento de calos e calosidades"
+                  class="w-full h-3/4 object-cover rounded-t-3xl"
+                />
+                <figcaption class="p-2">
+                  <h3 class="font-bold text-redOrangeLight3 leading-none text-lg">
+                    CUIDADO COM CALOS E CALOSIDADES
+                  </h3>
+                </figcaption>
+              </figure>
+              <p class="text-sm p-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
+                commodo nunc, vel placerat mi.
+              </p>
+              <span class="absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2"></span>
+            </div>
+            <div class="relative h-90 w-72 rounded-t-3xl shadow-xl bg-redOrangeLight4">
+              <figure class="h-3/5">
+                <img
+                  src="./src/images/service-terapia.jpg"
+                  alt="Foto de terapia para dor nos pés"
+                  class="w-full h-3/4 object-cover rounded-t-3xl"
+                />
+                <figcaption class="p-2">
+                  <h3 class="font-bold text-redOrangeLight3 leading-none text-lg">
+                    TERAPIA PARA DOR NOS PÉS COM REFLEXOLOGIA
+                  </h3>
+                </figcaption>
+              </figure>
+              <p class="text-sm p-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
+                commodo nunc, vel placerat mi.
+              </p>
+              <span class="absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2"></span>
+            </div>
+            <div class="relative h-90 w-72 rounded-t-3xl shadow-xl bg-redOrangeLight4">
+              <figure class="h-3/5">
+                <img
+                  src="./src/images/service-cuidados.jpg"
+                  alt="Foto de um pé feminino bem cuidado"
+                  class="w-full h-3/4 object-cover object-top rounded-t-3xl"
+                />
+                <figcaption class="p-2">
+                  <h3 class="font-bold text-redOrangeLight3 leading-none text-lg">
+                    ORIENTAÇÃO SOBRE CUIDADOS DIÁRIOS
+                  </h3>
+                </figcaption>
+              </figure>
+              <p class="text-sm p-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
+                commodo nunc, vel placerat mi.
+              </p>
+              <span class="absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="infrastructure" class="h-screen bg-redOrangeDark flex text-redOrangeLight2">
+        <div class="w-2/5 h-full flex items-center justify-center">
+          <figure class="h-4/5 w-full ">
+            <img src="./src/images/background-sidebar-section-3.jpg" alt="" class="w-full h-full object-cover object-right rounded-r-xl">
+          </figure>
+        </div>
+        <div class="w-3/5 mx-10 flex flex-col justify-evenly">
+          <div class="w-4/5 font-semibold">
+            <h3 class="text-3xl mb-4">Um espaço feito para o <strong>seu conforto!</strong></h3>
+            <p class="text-xl">Aqui na nossa clínica, cada detalhe foi pensado para <strong>você se sentir à vontade!</strong> Contamos com equipamentos modernos para garantir a melhor experiência, além de um ambiente acolhedor. leve e cheio de boas vibrações. Tudo para que você cuide da saúde dos seus pés com conforto e tranquilidade.</p>
+          </div>
+          <div class="flex">
+            <div class="px-4">
+              <p>Icon</p>
+              <h4 class="font-bold text-2xl">Café Bar</h4>
+              <p class="text-lg">Aqui, cuidar dos seus pés também é sinônimo de relaxar! Aproveite nosso cantinho especial com café fresquinho e diversas opções de bebidas para o seu conforto.</p>
+            </div>
+            <div class="px-4">
+              <p>Icon</p>
+              <h4 class="font-bold text-2xl">Spa Shop</h4>
+              <p class="text-lg">Explore nossa loja exclusiva com produtos de alta qualidade para o cuidado dos seus pés: cremes, palmilhas e itens selecionados para promover o seu bem-estar e saúde.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="reviews" class="h-screen px-24">
+        <div class="w-1/3 flex flex-col items-center text-center text-redOrangeDark m-auto">
+          <img src="./src/images/five-starts.png" alt="" class="w-[400px] h-[150px] object-cover">
+          <h2 class="font-bold text-4xl mb-2">Temos uma avaliação de 5 no Google.</h2>
+          <p class="text-xl">Veja alguns de nossos clientes e seus comentários sobre nossa empresa.</p>
+        </div>
+        <div class="flex justify-between mt-10">
+          <div class="h-72 w-[550px] rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark">
+            <h3 class="font-bold text-xl">Nathalia Oliveira</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
+              commodo nunc, vel placerat mi.
+            </p>
+          </div>
+          <div class="h-72 w-[550px] rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark">
+            <h3 class="font-bold text-xl">Nathalia Oliveira</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
+              commodo nunc, vel placerat mi.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="location" class="h-screen">Seção 5</section>
+    </main>
+    <footer>
+      <p>
+        © 2025 Effect Podologia. Todos os direitos reservados. <br />
+        Desenvolvido por
+        <a href="https://www.linkedin.com/in/jvitor-gmira/">João Vitor Mira</a>
+      </p>
+    </footer>
+  </body>
+  <script src="./src/index.js"></script>
 </html>
