@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Effect Podologia</title>
     <link href="./dist/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/837aa9de60.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="bg-redOrangeLight1 h-screen">
     <header>
@@ -73,54 +77,51 @@
       </nav>
     </header>
     <main>
-      <section id="home" class="h-screen px-24 flex space-x-14">
-        <div class="w-screen flex flex-col">
-          <div class="flex h-16">
-            <div class="w-1/3">
-              <img
-                src="./src/images/logos/terracotta-horizontal.png"
-                alt="Foto da Podóloga"
-                class="h-full object-cover"
-              />
-            </div>
-            <div class="w-2/3"></div>
-          </div>
+      <section id="home" class="h-screen px-24 flex">
+        <div class="w-1/2 flex flex-col mr-24">
+          <figure class="w-1/2">
+            <img
+              src="./src/images/logos/terracotta-horizontal.png"
+              alt="Logo horizontal Effect Podologia"
+              class="object-cover"
+            />
+          </figure>
           <div class="mt-3">
             <h2
               class="text-[44px] leading-none font-bold bg-gradient-to-r from-redOrangeDark to-redOrangeLight2 inline-block text-transparent bg-clip-text mb-2 pb-2"
             >
               SUA CLÍNICA DE PODOLOGIA DE CONFIANÇA
             </h2>
-            <p class="text-2xl text-redOrange2">
-              Podóloga com mais de 15 anos de experiência, dedicada ao cuidado e
+            <h3 class="text-2xl text-redOrange2">
+              Podóloga com mais de 20 anos de experiência, dedicada ao cuidado e
               à saúde dos pés. Especialista em tratamentos de
               <strong>
                 unhas encravadas, calosidades, dores nos pés e prevenção de
                 problemas podológicos.
               </strong>
               Comprometida com o bem-estar e qualidade de vida dos pacientes,
-              oferecendo atendimento humanizado e eficaz
-            </p>
+              oferecendo atendimento humanizado e eficaz.
+            </h3>
           </div>
           <div class="flex justify-between mt-10">
             <button
-              class="border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-lg text-[22px] text-white font-bold px-4 py-2"
+              class="border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-lg text-xl text-white font-bold px-4 py-2 hover:bg-redOrangeLight2  hover:text-redOrangeDark"
             >
               AGENDE SEU HORÁRIO
             </button>
             <button
-              class="border-solid border-[3px] border-gray-400 rounded-3xl bg-redOrangeLight2 shadow-lg text-[22px] text-redOrangeDark font-bold px-4 py-2"
+              class="border-solid border-[3px] border-gray-400 rounded-3xl bg-redOrangeLight2 shadow-lg text-xl text-redOrangeDark font-bold px-4 py-2 hover:text-white hover:border-redOrangeDark"
             >
               NOSSOS PROCEDIMENTOS
             </button>
           </div>
         </div>
-        <div class="w-screen flex flex-col">
-          <figure>
+        <div class="w-1/2">
+          <figure class="h-full">
             <img
               src="./src/images/podologa-example.jpg"
               alt="Foto da podóloga Luana Garcia Medeiros"
-              class="rounded-2xl shadow-lg"
+              class="h-4/6 w-full rounded-2xl shadow-lg object-cover"
             />
             <figcaption class="mt-2">
               <h2 class="text-2xl text-redOrangeLight3 font-bold">
@@ -147,7 +148,9 @@
             Nossos principais procedimentos
           </h2>
           <div class="flex justify-between">
-            <div class="relative h-96 w-72 rounded-t-3xl shadow-xl bg-redOrangeLight4">
+            <div
+              class="relative h-96 w-72 rounded-t-3xl shadow-xl bg-redOrangeLight4 hover:shadow-2xl"
+            >
               <figure class="h-3/5">
                 <img
                   src="./src/images/service-unha-encravada.jpg"
@@ -155,19 +158,25 @@
                   class="w-full h-3/4 object-cover rounded-t-3xl"
                 />
                 <figcaption class="p-2">
-                  <h3 class="font-bold text-redOrangeLight3 leading-none text-lg">
+                  <h3
+                    class="font-bold text-redOrangeLight3 leading-none text-lg" 
+                  >
                     TRATAMENTO DE UNHA ENCRAVADA
                   </h3>
                 </figcaption>
               </figure>
-              <p class="text-sm p-2">
+              <h4 class="text-redOrange2 text-sm p-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
                 commodo nunc, vel placerat mi.
-              </p>
-              <span class="absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2"></span>
+              </h4>
+              <span
+                class="absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2"
+              ></span>
             </div>
-            <div class="relative h-90 w-72 rounded-t-3xl shadow-xl bg-redOrangeLight4">
+            <div
+              class="relative h-90 w-72 rounded-t-3xl shadow-xl bg-redOrangeLight4 hover:shadow-2xl"
+            >
               <figure class="h-3/5 w-full">
                 <img
                   src="./src/images/service-calosidades.jpg"
@@ -175,19 +184,25 @@
                   class="w-full h-3/4 object-cover rounded-t-3xl"
                 />
                 <figcaption class="p-2">
-                  <h3 class="font-bold text-redOrangeLight3 leading-none text-lg">
+                  <h3
+                    class="font-bold text-redOrangeLight3 leading-none text-lg"
+                  >
                     CUIDADO COM CALOS E CALOSIDADES
                   </h3>
                 </figcaption>
               </figure>
-              <p class="text-sm p-2">
+              <h4 class="text-redOrange2 text-sm p-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
                 commodo nunc, vel placerat mi.
-              </p>
-              <span class="absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2"></span>
+              </h4>
+              <span
+                class="absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2"
+              ></span>
             </div>
-            <div class="relative h-90 w-72 rounded-t-3xl shadow-xl bg-redOrangeLight4">
+            <div
+              class="relative h-90 w-72 rounded-t-3xl shadow-xl bg-redOrangeLight4 hover:shadow-2xl"
+            >
               <figure class="h-3/5">
                 <img
                   src="./src/images/service-terapia.jpg"
@@ -195,19 +210,25 @@
                   class="w-full h-3/4 object-cover rounded-t-3xl"
                 />
                 <figcaption class="p-2">
-                  <h3 class="font-bold text-redOrangeLight3 leading-none text-lg">
+                  <h3
+                    class="font-bold text-redOrangeLight3 leading-none text-lg"
+                  >
                     TERAPIA PARA DOR NOS PÉS COM REFLEXOLOGIA
                   </h3>
                 </figcaption>
               </figure>
-              <p class="text-sm p-2">
+              <h4 class="text-redOrange2 text-sm p-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
                 commodo nunc, vel placerat mi.
-              </p>
-              <span class="absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2"></span>
+              </h4>
+              <span
+                class="absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2"
+              ></span>
             </div>
-            <div class="relative h-90 w-72 rounded-t-3xl shadow-xl bg-redOrangeLight4">
+            <div
+              class="relative h-90 w-72 rounded-t-3xl shadow-xl bg-redOrangeLight4 hover:shadow-2xl"
+            >
               <figure class="h-3/5">
                 <img
                   src="./src/images/service-cuidados.jpg"
@@ -215,76 +236,241 @@
                   class="w-full h-3/4 object-cover object-top rounded-t-3xl"
                 />
                 <figcaption class="p-2">
-                  <h3 class="font-bold text-redOrangeLight3 leading-none text-lg">
+                  <h3
+                    class="font-bold text-redOrangeLight3 leading-none text-lg"
+                  >
                     ORIENTAÇÃO SOBRE CUIDADOS DIÁRIOS
                   </h3>
                 </figcaption>
               </figure>
-              <p class="text-sm p-2">
+              <h4 class="text-redOrange2 text-sm p-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
                 commodo nunc, vel placerat mi.
-              </p>
-              <span class="absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2"></span>
+              </h4>
+              <span
+                class="absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2"
+              ></span>
             </div>
           </div>
         </div>
       </section>
-      <section id="infrastructure" class="h-screen bg-redOrangeDark flex text-redOrangeLight2">
+      <section
+        id="infrastructure"
+        class="h-screen bg-redOrangeDark flex text-redOrangeLight2"
+      >
         <div class="w-2/5 h-full flex items-center justify-center">
-          <figure class="h-4/5 w-full ">
-            <img src="./src/images/background-sidebar-section-3.jpg" alt="" class="w-full h-full object-cover object-right rounded-r-xl">
+          <figure class="h-4/5 w-full">
+            <img
+              src="./src/images/background-sidebar-section-3.jpg"
+              alt=""
+              class="w-full h-full object-cover object-right rounded-r-xl"
+            />
           </figure>
         </div>
         <div class="w-3/5 mx-10 flex flex-col justify-evenly">
           <div class="w-4/5 font-semibold">
-            <h3 class="text-3xl mb-4">Um espaço feito para o <strong>seu conforto!</strong></h3>
-            <p class="text-xl">Aqui na nossa clínica, cada detalhe foi pensado para <strong>você se sentir à vontade!</strong> Contamos com equipamentos modernos para garantir a melhor experiência, além de um ambiente acolhedor. leve e cheio de boas vibrações. Tudo para que você cuide da saúde dos seus pés com conforto e tranquilidade.</p>
+            <h2 class="text-3xl mb-4">
+              Um espaço feito para o <strong>seu conforto!</strong>
+            </h2>
+            <h3 class="text-xl">
+              Aqui na nossa clínica, cada detalhe foi pensado para
+              <strong>você se sentir à vontade!</strong> Contamos com
+              equipamentos modernos para garantir a melhor experiência, além de
+              um ambiente acolhedor leve e cheio de boas vibrações. Tudo para
+              que você cuide da saúde dos seus pés com conforto e tranquilidade.
+            </h3>
           </div>
           <div class="flex">
             <div class="px-4">
-              <p>Icon</p>
+              <span class="text-3xl">
+                <i class="fa-duotone fa-solid fa-mug-hot"></i>
+              </span>
               <h4 class="font-bold text-2xl">Café Bar</h4>
-              <p class="text-lg">Aqui, cuidar dos seus pés também é sinônimo de relaxar! Aproveite nosso cantinho especial com café fresquinho e diversas opções de bebidas para o seu conforto.</p>
+              <h5 class="text-lg">
+                Aqui, cuidar dos seus pés também é sinônimo de relaxar!
+                Aproveite nosso cantinho especial com café fresquinho e diversas
+                opções de bebidas para o seu conforto.
+              </h5>
             </div>
             <div class="px-4">
-              <p>Icon</p>
+              <span class="text-3xl">
+                <i class="fa-solid fa-spa"></i>
+              </span>
               <h4 class="font-bold text-2xl">Spa Shop</h4>
-              <p class="text-lg">Explore nossa loja exclusiva com produtos de alta qualidade para o cuidado dos seus pés: cremes, palmilhas e itens selecionados para promover o seu bem-estar e saúde.</p>
+              <h5 class="text-lg">
+                Explore nossa loja exclusiva com produtos de alta qualidade para
+                o cuidado dos seus pés: cremes, palmilhas e itens selecionados
+                para promover o seu bem-estar e saúde.
+              </h5>
             </div>
           </div>
         </div>
       </section>
       <section id="reviews" class="h-screen px-24">
-        <div class="w-1/3 flex flex-col items-center text-center text-redOrangeDark m-auto">
-          <img src="./src/images/five-starts.png" alt="" class="w-[400px] h-[150px] object-cover">
-          <h2 class="font-bold text-4xl mb-2">Temos uma avaliação de 5 no Google.</h2>
-          <p class="text-xl">Veja alguns de nossos clientes e seus comentários sobre nossa empresa.</p>
+        <div
+          class="w-1/3 flex flex-col items-center text-center text-redOrangeDark m-auto"
+        >
+          <img
+            src="./src/images/five-starts.png"
+            alt=""
+            class="w-[400px] h-[150px] object-cover"
+          />
+          <h2 class="font-bold text-4xl mb-2">
+            Temos uma avaliação de 5,0 no
+            <a
+              href="https://www.google.com/search?q=effect+podologia&sca_esv=cf26ac7335e7e159&sxsrf=ADLYWIKIOnLhQnf4Yjc_QWzkODmQzy2GYQ%3A1736358733464&source=hp&ei=Tbt-Z9r2GeKc5OUPysTo6Aw&iflsig=AL9hbdgAAAAAZ37JXc56Q12D8-X-kDT2x7h_bKazNE1z&oq=Effect+podol&gs_lp=Egdnd3Mtd2l6IgxFZmZlY3QgcG9kb2wqAggAMgoQIxiABBgnGIoFMg4QLhiABBjHARiOBRivATICECYyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBEj-IFC0B1jbE3ABeACQAQCYAZgBoAGbDKoBBDAuMTK4AQHIAQD4AQGYAg2gAr8MqAIKwgIHECMYJxjqAsICBBAjGCfCAgsQABiABBixAxiDAcICERAuGIAEGLEDGNEDGIMBGMcBwgIOEAAYgAQYsQMYgwEYigXCAgsQLhiABBixAxiDAcICBRAAGIAEwgIIEAAYgAQYsQPCAggQLhiABBixA8ICCxAuGIAEGLEDGNQCwgIOEC4YgAQYsQMYgwEYigXCAg4QLhiABBixAxjRAxjHAcICDhAuGIAEGLEDGMcBGK8BwgIKEAAYgAQYsQMYCsICBBAAGAPCAgsQLhiABBjHARivAcICBxAAGIAEGArCAggQABiABBjLAcICBhAAGBYYHpgDBfEFQ800lDpWbISSBwQxLjEyoAendA&sclient=gws-wiz#lrd=0x94cc351ef3c0529d:0x49b5406164d42d7,1,,,,"
+              target="_blank"
+              class="hover:text-redOrangeLight2"
+              >Google
+              <span class="text-3xl"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i></span
+              ></a
+            >
+            
+          </h2>
+          <p class="text-xl">
+            Veja alguns de nossos clientes e seus comentários sobre nossa
+            empresa.
+          </p>
         </div>
-        <div class="flex justify-between mt-10">
-          <div class="h-72 w-[550px] rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark">
-            <h3 class="font-bold text-xl">Nathalia Oliveira</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
-              commodo nunc, vel placerat mi.
-            </p>
+        <div class="grid grid-cols-2 gap-10 place-items-center mt-10">
+          <div
+            class="relative min-h-[100px] w-[550px] rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark"
+          >
+            <figure class="absolute -top-8 left-1/2 transform -translate-x-1/2">
+              <img
+                src="./src/images/woman-avatar.png"
+                alt="Foto de um avatar mulher"
+                class="w-16 h-16 border-solid border-[3px] border-redOrangeLight3 rounded-full object-cover"
+              />
+            </figure>
+            <div>
+              <h3 class="font-bold text-xl">Nathalia Oliveira</h3>
+              <p>
+                Profissional excelente! Foi a única podóloga que conseguiu
+                salvar meus dedos, que estavam extremamente encravados e
+                feios!!! Super cuidadosa e mão leve. Tirou meu medo de
+                podólogas. Agora consigo usar sandália, sem ter vergonha do meu
+                pé. Obrigada! 🙏🏻
+              </p>
+            </div>
           </div>
-          <div class="h-72 w-[550px] rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark">
-            <h3 class="font-bold text-xl">Nathalia Oliveira</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
-              commodo nunc, vel placerat mi.
-            </p>
+          <div
+            class="relative min-h-[100px] w-[550px] rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark"
+          >
+            <figure class="absolute -top-8 left-1/2 transform -translate-x-1/2">
+              <img
+                src="./src/images/woman-avatar.png"
+                alt="Foto de um avatar mulher"
+                class="w-16 h-16 border-solid border-[3px] border-redOrangeLight3 rounded-full object-cover"
+              />
+            </figure>
+            <div>
+              <h3 class="font-bold text-xl">Ana Paula Souza</h3>
+              <p>
+                Uma excelente profissional, cuidadosa e atenciosa no trato dos
+                pés, um ambiente agradável sempre com pontualidade no horário
+                marcado, trabalho de excelência e esmero, indicação garantida.
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative min-h-[100px] w-[550px] rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark"
+          >
+            <figure class="absolute -top-8 left-1/2 transform -translate-x-1/2">
+              <img
+                src="./src/images/woman-avatar.png"
+                alt="Foto de um avatar mulher"
+                class="w-16 h-16 border-solid border-[3px] border-redOrangeLight3 rounded-full object-cover"
+              />
+            </figure>
+            <div>
+              <h3 class="font-bold text-xl">Bruna Martins</h3>
+              <p>
+                A Luana foi maravilhosa. Fez um transplante de pés em mim sem
+                cirurgia, cheguei cheia de descamações e calos e saí de lá com
+                pé de neném. Eu amei, recomendo ❤️
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative min-h-[100px] w-[550px] rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark"
+          >
+            <figure class="absolute -top-8 left-1/2 transform -translate-x-1/2">
+              <img
+                src="./src/images/woman-avatar.png"
+                alt="Foto de um avatar mulher"
+                class="w-16 h-16 border-solid border-[3px] border-redOrangeLight3 rounded-full object-cover"
+              />
+            </figure>
+            <div>
+              <h3 class="font-bold text-xl">Juciara Lopes</h3>
+              <p>
+                Atendimento excelente, profissional capacitada e super
+                acolhedora , instrumentos todos esterilizados ambiente limpo , a
+                melhor podóloga da vida!Super recomendo.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section id="location" class="h-screen">Seção 5</section>
+      <section id="location" class="mt-24 px-24 h-screen flex">
+        <div class="w-2/5 flex flex-col space-y-24 mr-20">
+          <div class="text-redOrangeDark">
+            <h2 class="font-bold text-4xl mb-2">Mapa de localização</h2>
+            <h3 class="text-2xl">
+              Estamos localizados na Zona Oeste de São José dos Campos.
+            </h3>
+          </div>
+          <div class="flex justify-center items-center">
+            <span class="text-6xl text-redOrangeDark mr-5">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <address class="not-italic text-xl text-redOrangeDark">
+              <p>Rua Heitor de Andrade, 619</p>
+              <p>Jardim das Industrias - São José dos Campos, SP</p>
+            </address>
+          </div>
+          <div>
+            <figure class="w-1/2 mb-8">
+              <img
+                src="./src/images/logos/terracotta-horizontal.png"
+                alt="Logo horizontal Effect Podologia"
+                class="object-cover"
+              />
+            </figure>
+            <button
+              class="w-4/5 border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeLight2 shadow-lg text-xl text-redOrangeDark font-bold px-4 py-2 hover:bg-redOrangeLight3 hover:text-redOrangeLight1"
+            >
+              Quero agendar meu atendimento
+            </button>
+          </div>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.5716288576973!2d-45.920592725068246!3d-23.22227697903419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc359dfc306077%3A0x205f8cf69bc2eb0c!2sR.%20Heitor%20de%20Andrade%2C%20619%20-%20Jardim%20das%20Industrias%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012241-000!5e0!3m2!1spt-BR!2sbr!4v1736352154251!5m2!1spt-BR!2sbr"
+            width="800"
+            height="600"
+            class="border-solid border-[3px] border-redOrangeLight2 rounded shadow-lg"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </section>
     </main>
-    <footer>
+    <footer class="text-center p-2 bg-redOrangeLight4 text-redOrange2">
+      <p>© 2025 Effect Podologia. Todos os direitos reservados.</p>
       <p>
-        © 2025 Effect Podologia. Todos os direitos reservados. <br />
         Desenvolvido por
-        <a href="https://www.linkedin.com/in/jvitor-gmira/">João Vitor Mira</a>
+        <a
+          href="https://wa.me/5512997436507"
+          target="_blank"
+          class="hover:font-bold"
+          >João Vitor Mira</a
+        >
       </p>
     </footer>
   </body>

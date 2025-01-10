@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify && cp ./index.html ./dist/ && cp ./src/index.js ./dist/ && sed -i 's|./src/index.js|./index.js|g' ./dist/index.html",
     "format": "prettier --write ."
   },
   "repository": {
