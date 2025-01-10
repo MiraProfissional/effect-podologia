@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth scroll-pt-[80px]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,73 +11,18 @@
     ></script>
   </head>
   <body class="bg-redOrangeLight1 h-screen">
-    <header>
+    <header class="fixed bg-redOrangeLight1 w-full py-8 z-20">
       <h1 class="sr-only">Effect Podologia</h1>
-      <nav class="flex space-x-10 m-24">
-        <a
-          href="#"
-          class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark"
-        >
-          <span
-            class="transition-transform duration-300 group-hover:-translate-y-1"
-            >INÍCIO</span
-          >
-          <span
-            class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"
-          ></span>
-        </a>
-        <a
-          href="#services"
-          class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark"
-        >
-          <span
-            class="transition-transform duration-300 group-hover:-translate-y-1"
-            >SERVIÇOS</span
-          >
-          <span
-            class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"
-          ></span>
-        </a>
-        <a
-          href="#infrastructure"
-          class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark"
-        >
-          <span
-            class="transition-transform duration-300 group-hover:-translate-y-1"
-            >INFRAESTRUTURA</span
-          >
-          <span
-            class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"
-          ></span>
-        </a>
-        <a
-          href="#reviews"
-          class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark"
-        >
-          <span
-            class="transition-transform duration-300 group-hover:-translate-y-1"
-            >AVALIAÇÃO</span
-          >
-          <span
-            class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"
-          ></span>
-        </a>
-        <a
-          href="#location"
-          class="relative group font-bold text-redOrangeLight2 hover:text-redOrangeDark"
-        >
-          <span
-            class="transition-transform duration-300 group-hover:-translate-y-1"
-            >LOCALIZAÇÃO</span
-          >
-          <span
-            class="absolute left-0 bottom-0 w-0 h-[3px] bg-redOrangeDark transition-all duration-300 group-hover:w-full"
-          ></span>
-        </a>
+      <nav class="flex space-x-10 mx-24">
+        <a href="#" class="navLink"> INÍCIO </a>
+        <a href="#services" class="navLink"> SERVIÇOS </a>
+        <a href="#infrastructure" class="navLink"> INFRAESTRUTURA </a>
+        <a href="#reviews" class="navLink"> AVALIAÇÃO </a>
+        <a href="#location" class="navLink"> LOCALIZAÇÃO </a>
       </nav>
     </header>
     <main>
-      <section id="home" class="h-screen px-24 flex">
+      <section id="home" class="h-screen px-24 pt-28 flex">
         <div class="w-1/2 flex flex-col mr-24">
           <figure class="w-1/2">
             <img
@@ -105,7 +50,7 @@
           </div>
           <div class="flex justify-between mt-10">
             <button
-              class="border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-lg text-xl text-white font-bold px-4 py-2 hover:bg-redOrangeLight2  hover:text-redOrangeDark"
+              class="border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-lg text-xl text-white font-bold px-4 py-2 hover:bg-redOrangeLight2 hover:text-redOrangeDark"
             >
               AGENDE SEU HORÁRIO
             </button>
@@ -159,7 +104,7 @@
                 />
                 <figcaption class="p-2">
                   <h3
-                    class="font-bold text-redOrangeLight3 leading-none text-lg" 
+                    class="font-bold text-redOrangeLight3 leading-none text-lg"
                   >
                     TRATAMENTO DE UNHA ENCRAVADA
                   </h3>
@@ -325,9 +270,7 @@
               >Google
               <span class="text-3xl"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i></span
-              ></a
-            >
-            
+            ></a>
           </h2>
           <p class="text-xl">
             Veja alguns de nossos clientes e seus comentários sobre nossa
@@ -415,7 +358,7 @@
           </div>
         </div>
       </section>
-      <section id="location" class="mt-24 px-24 h-screen flex">
+      <section id="location" class="mt-24 px-24 pt-3 h-screen flex">
         <div class="w-2/5 flex flex-col space-y-24 mr-20">
           <div class="text-redOrangeDark">
             <h2 class="font-bold text-4xl mb-2">Mapa de localização</h2>
@@ -451,7 +394,7 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.5716288576973!2d-45.920592725068246!3d-23.22227697903419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc359dfc306077%3A0x205f8cf69bc2eb0c!2sR.%20Heitor%20de%20Andrade%2C%20619%20-%20Jardim%20das%20Industrias%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012241-000!5e0!3m2!1spt-BR!2sbr!4v1736352154251!5m2!1spt-BR!2sbr"
             width="800"
-            height="600"
+            height="580"
             class="border-solid border-[3px] border-redOrangeLight2 rounded shadow-lg"
             allowfullscreen=""
             loading="lazy"
@@ -473,8 +416,14 @@
         >
       </p>
     </footer>
-    <span class="fixed right-4 bottom-4 z-10 text-redOrange1 text-5xl hover:text-green-500">
-      <a href="https://wa.me//5512997095226?text=Olá,%20tenho%20interesse%20em%20agendar%20uma%20consulta!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <span
+      class="fixed right-4 bottom-4 z-10 text-redOrangeLight2 text-5xl hover:text-green-500"
+    >
+      <a
+        href="https://wa.me//5512997095226?text=Olá,%20tenho%20interesse%20em%20agendar%20uma%20consulta!"
+        target="_blank"
+        ><i class="fa-brands fa-whatsapp"></i
+      ></a>
     </span>
   </body>
   <script src="./src/index.js"></script>

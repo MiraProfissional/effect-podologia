@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navLink {
+  @apply relative text-redOrangeLight2 font-bold hover:text-redOrangeDark;
+}
+
+.navLink::after {
+  @apply content-[''] bg-redOrangeDark h-[3px] w-[0%] left-0 -bottom-[5px] absolute duration-300;
+}
+
+.navLink:hover::after {
+  @apply w-[100%];
+}
+
+.navLink.active {
+  @apply text-redOrangeDark;
+}
+
+.navLink.active::after {
+  @apply w-[100%];
+}
