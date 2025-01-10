@@ -15,7 +15,7 @@
 }
 
 .navLink.active {
-  @apply text-redOrangeDark;
+  @apply text-redOrangeDark scale-105 transform transition duration-300;
 }
 
 .navLink.active::after {
