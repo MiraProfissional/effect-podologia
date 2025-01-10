@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
-    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify && cp ./index.html ./dist/ && cp ./src/index.js ./dist/ && sed -i 's|./src/index.js|./index.js|g' ./dist/index.html",
     "format": "prettier --write ."
   },
   "repository": {
