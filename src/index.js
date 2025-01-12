@@ -1,5 +1,6 @@
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav a');
+const serviceCards = document.querySelectorAll('.hiddenServiceCard');
 let currentLink = navLinks[0];
 
 const activateLink = (link) => {
@@ -44,17 +45,17 @@ const activeCurrentHoverLink = (entries) => {
   });
 };
 
-const observerOptions = {
+const sectionObserverOptions = {
   threshold: 0.8,
 };
 
-const observer = new IntersectionObserver(
+const sectionObserver = new IntersectionObserver(
   activeCurrentHoverLink,
-  observerOptions
+  sectionObserverOptions
 );
 
 sections.forEach((section) => {
-  observer.observe(section);
+  sectionObserver.observe(section);
 });
 
 navLinks.forEach((link) => {
@@ -71,4 +72,27 @@ navLinks.forEach((link) => {
       activateLink(currentLink);
     }
   });
+});
+
+const activeCardsAnimation = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visibleServiceCard');
+    } else {
+      entry.target.classList.remove('visibleServiceCard');
+    }
+  });
+};
+
+const serviceCardsObserverOptions = {
+  threshold: 0.8,
+};
+
+const serviceCardsObserver = new IntersectionObserver(
+  activeCardsAnimation,
+  serviceCardsObserverOptions
+);
+
+serviceCards.forEach((card) => {
+  serviceCardsObserver.observe(card);
 });
