@@ -3,6 +3,9 @@ export default {
   content: ['./*.html', './src/**/*.{html,js}'],
   theme: {
     extend: {
+      fontFamily: {
+        sara: ['sara'],
+      },
       colors: {
         redOrangeLight1: '#f5e7e4',
         redOrangeLight2: '#d19f92',
