@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" class="scroll-smooth scroll-pt-[80px]">
+<html lang="pt-BR" class="scroll-smooth 2xl:scroll-pt-[80px]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,9 +11,38 @@
     ></script>
   </head>
   <body class="bg-redOrangeLight1 h-screen">
-    <header class="fixed bg-redOrangeLight1 w-full py-8 z-20">
+    <header class="w-full h-20 fixed bg-redOrangeLight1 2xl:py-8 z-20">
       <h1 class="sr-only">Effect Podologia</h1>
-      <nav class="flex space-x-10 mx-24">
+      <div class="w-full h-full flex justify-between">
+        <a href="#" class="w-full h-full">
+          <figure class="w-2/5 h-full">
+            <img
+              src="./src/images/logos/terracotta-horizontal.png"
+              alt="Logo horizontal Effect Podologia"
+              class="w-full h-full object-contain p-2"
+            />
+          </figure>
+        </a>
+        <button
+          id="menu-toggle"
+          class="text-3xl text-redOrangeLight2 h-full mr-10"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <div class="w-full h-full">
+        <nav
+          id="mobile-menu"
+          class="hidden flex-col text-center font-bold bg-redOrangeLight1 text-redOrangeLight2 p-2 space-y-2"
+        >
+          <a href="#" class="block"> INÍCIO </a>
+          <a href="#services" class="block"> SERVIÇOS </a>
+          <a href="#infrastructure" class="block"> INFRAESTRUTURA </a>
+          <a href="#reviews" class="block"> AVALIAÇÕES</a>
+          <a href="#location" class="block"> LOCALIZAÇÃO </a>
+        </nav>
+      </div>
+      <nav class="hidden xl:flex space-x-10 mx-24">
         <a href="#" class="navLink"> INÍCIO </a>
         <a href="#services" class="navLink"> SERVIÇOS </a>
         <a href="#infrastructure" class="navLink"> INFRAESTRUTURA </a>
@@ -22,7 +51,7 @@
       </nav>
     </header>
     <main>
-      <section id="home" class="h-screen px-24 pt-28 flex">
+      <section id="home" class="h-screen flex 2xl:px-24 2xl:pt-28">
         <div class="w-1/2 flex flex-col mr-24">
           <figure class="w-1/2">
             <img
@@ -409,7 +438,7 @@
             </a>
           </div>
         </div>
-        <div class="pt-10">
+        <div class="pt-10 hidden">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.5716288576973!2d-45.920592725068246!3d-23.22227697903419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc359dfc306077%3A0x205f8cf69bc2eb0c!2sR.%20Heitor%20de%20Andrade%2C%20619%20-%20Jardim%20das%20Industrias%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012241-000!5e0!3m2!1spt-BR!2sbr!4v1736352154251!5m2!1spt-BR!2sbr"
             width="800"

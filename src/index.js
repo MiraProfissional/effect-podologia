@@ -123,3 +123,10 @@ const reviewCardsObserver = new IntersectionObserver(
 reviewCards.forEach((card) => {
   reviewCardsObserver.observe(card);
 });
+
+const menuToggle = document.querySelector('#menu-toggle');
+const mobileMenu = document.querySelector('#mobile-menu');
+
+menuToggle.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
