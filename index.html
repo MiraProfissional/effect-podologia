@@ -427,16 +427,16 @@
           </div>
         </div>
       </section>
-      <section id="location" class="mt-24 px-24 pt-3 h-screen flex">
-        <div class="w-2/5 flex flex-col space-y-24 mr-20">
-          <div class="text-redOrangeDark">
+      <section id="location" class="my-24 px-24 pt-3 min-h-screen">
+        <div class="2xl:w-2/5 flex flex-col space-y-24 justify-center items-center 2xl:mr-20">
+          <div class="text-redOrangeDark text-center">
             <h2 class="font-bold text-4xl mb-2">Mapa de localização</h2>
             <h3 class="text-2xl">
               Estamos localizados na Zona Oeste de São José dos Campos.
             </h3>
           </div>
-          <div class="flex justify-center items-center">
-            <span class="text-6xl text-redOrangeDark mr-5">
+          <div class="flex flex-col text-center 2xl:justify-center 2xl:items-center">
+            <span class="text-6xl text-redOrangeDark mb-4 2xl:mr-5">
               <i class="fa-solid fa-location-dot"></i>
             </span>
             <address class="not-italic text-xl text-redOrangeDark">
@@ -444,7 +444,19 @@
               <p>Jardim das Industrias - São José dos Campos, SP</p>
             </address>
           </div>
-          <div>
+          <div class="w-full h-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.5716288576973!2d-45.920592725068246!3d-23.22227697903419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc359dfc306077%3A0x205f8cf69bc2eb0c!2sR.%20Heitor%20de%20Andrade%2C%20619%20-%20Jardim%20das%20Industrias%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012241-000!5e0!3m2!1spt-BR!2sbr!4v1736352154251!5m2!1spt-BR!2sbr"
+              width="440"
+              height="600"
+              class="w-full h-full border-solid border-[3px] border-redOrangeLight2 rounded shadow-lg"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+          <div class="flex flex-col justify-center items-center">
             <figure class="w-1/2 mb-8">
               <img
                 src="./src/images/logos/terracotta-horizontal.png"
