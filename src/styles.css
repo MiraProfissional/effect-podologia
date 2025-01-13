@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'sara';
+  src: url('http://localhost:5500/src/fonts/sans-sara.ttf') format('truetype');
+  font-weight: 'normal';
+  font-style: 'normal';
+}
+
+.navLink {
+  @apply relative text-redOrangeLight2 font-bold hover:text-redOrangeDark;
+}
+
+.navLink::after {
+  @apply content-[''] bg-redOrangeDark h-[3px] w-[0%] left-0 -bottom-[5px] absolute duration-300;
+}
+
+.navLink:hover::after {
+  @apply w-[100%];
+}
+
+.navLink.active {
+  @apply text-redOrangeDark scale-105 transform transition duration-300;
+}
+
+.navLink.active::after {
+  @apply w-[100%];
+}
+
+.hiddenServiceCard {
+  @apply opacity-0 -translate-x-10 transition-all duration-500 blur-sm;
+}
+
+.visibleServiceCard {
+  @apply opacity-100 translate-x-0 blur-0;
+}
+
+.hiddenServiceCard:nth-child(2) {
+  @apply delay-[200ms];
+}
+
+.hiddenServiceCard:nth-child(3) {
+  @apply delay-[400ms];
+}
+
+.hiddenServiceCard:nth-child(4) {
+  @apply delay-[600ms];
+}
+
+.reviewCard {
+  @apply opacity-0 blur-sm;
+}
+
+.reviewLeftCard {
+  @apply transform -translate-x-10 transition-all duration-500;
+}
+
+.reviewRightCard {
+  @apply transform translate-x-10 transition-all duration-500;
+}
+
+.visibleReviewCard {
+  @apply opacity-100 translate-x-0 blur-0;
+}
