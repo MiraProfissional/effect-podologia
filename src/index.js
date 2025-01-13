@@ -1,6 +1,5 @@
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav a');
-const serviceCards = document.querySelectorAll('.hiddenServiceCard');
 let currentLink = navLinks[0];
 
 const activateLink = (link) => {
@@ -38,6 +37,7 @@ const getCorrespondingNavLink = (sectionId) => {
 const activeCurrentHoverLink = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
+      console.log(entry);
       currentLink = getCorrespondingNavLink(entry.target.id);
       activateLink(currentLink);
       deactivateAllLinks(currentLink);
@@ -46,7 +46,7 @@ const activeCurrentHoverLink = (entries) => {
 };
 
 const sectionObserverOptions = {
-  threshold: 0.8,
+  threshold: 0.6,
 };
 
 const sectionObserver = new IntersectionObserver(
@@ -74,7 +74,9 @@ navLinks.forEach((link) => {
   });
 });
 
-const activeCardsAnimation = (entries) => {
+const serviceCards = document.querySelectorAll('.hiddenServiceCard');
+
+const activeServiceCardsAnimation = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visibleServiceCard');
@@ -89,10 +91,35 @@ const serviceCardsObserverOptions = {
 };
 
 const serviceCardsObserver = new IntersectionObserver(
-  activeCardsAnimation,
+  activeServiceCardsAnimation,
   serviceCardsObserverOptions
 );
 
 serviceCards.forEach((card) => {
   serviceCardsObserver.observe(card);
+});
+
+const reviewCards = document.querySelectorAll('.reviewCard');
+
+const activeReviewCardsAnimation = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visibleReviewCard');
+    } else {
+      entry.target.classList.remove('visibleReviewCard');
+    }
+  });
+};
+
+const reviewCardsObserverOptions = {
+  threshold: 0.8,
+};
+
+const reviewCardsObserver = new IntersectionObserver(
+  activeReviewCardsAnimation,
+  reviewCardsObserverOptions
+);
+
+reviewCards.forEach((card) => {
+  reviewCardsObserver.observe(card);
 });

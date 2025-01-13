@@ -48,3 +48,19 @@
 .hiddenServiceCard:nth-child(4) {
   @apply delay-[600ms];
 }
+
+.reviewCard {
+  @apply opacity-0 blur-sm;
+}
+
+.reviewLeftCard {
+  @apply transform -translate-x-10 transition-all duration-500;
+}
+
+.reviewRightCard {
+  @apply transform translate-x-10 transition-all duration-500;
+}
+
+.visibleReviewCard {
+  @apply opacity-100 translate-x-0 blur-0;
+}
