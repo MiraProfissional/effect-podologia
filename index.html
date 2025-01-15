@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Effect Podologia é a sua clínica de confiança para saúde e cuidado dos pés. Especialista em tratamentos de unhas encravadas, calosidades, micoses e muito mais."
+    />
     <title>Effect Podologia</title>
     <link href="./dist/styles.css" rel="stylesheet" />
     <script
@@ -11,45 +15,47 @@
     ></script>
   </head>
   <body class="bg-redOrangeLight1 h-screen">
-    <header>
-      <nav>
-        Navbar
+    <header class="w-full fixed top-0 left-0 z-50">
+      <h1 class="sr-only">Effect Podologia</h1>
+      <div class="flex justify-between py-2 px-4">
+        <a href="#">
+          <figure class="w-2/5 h-full">
+            <img
+              src="./src/images/logos/terracotta-horizontal.png"
+              alt="Logo da Effect Podologia, representando saúde e cuidado com os pés"
+              class="w-full h-full object-cover"
+            />
+          </figure>
+        </a>
+        <button
+          id="menu-toggle"
+          aria-controls="mobile-navbar"
+          aria-expanded="false"
+          aria-label="Abrir menu mobile"
+          class="text-redOrangeLight2 text-xl"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <nav
+        id="mobile-navbar"
+        role="navigation"
+        class="hidden grid-cols-1 place-items-center bg-redOrangeLight1 text-redOrangeLight2 font-bold text-base space-y-2 border-b-2 border-redOrangeLight2 p-2"
+      >
+        <a href="#" class="block"> INÍCIO </a>
+        <a href="#services" class="block"> SERVIÇOS </a>
+        <a href="#infrastructure" class="block"> INFRAESTRUTURA </a>
+        <a href="#reviews" class="block"> AVALIAÇÕES</a>
+        <a href="#location" class="block"> LOCALIZAÇÃO </a>
       </nav>
     </header>
     <main>
-      <section id="home">
-        Seção Home
-      </section>
-      <section id="services">
-        Seção Serviços
-      </section>
-      <section
-        id="infrastructure"
-        
-      >
-      Seção Infraestrutura
-      </section>
-      <section id="reviews" >
-        Seção Avaliações
-      </section>
-      <section id="location">
-        Seção Localização
-      </section>
+      <section id="home"></section>
+      <section id="services"></section>
+      <section id="infrastructure"></section>
+      <section id="reviews"></section>
+      <section id="location"></section>
     </main>
-    <footer
-      
-    >
-      <p>© 2025 Effect Podologia. Todos os direitos reservados.</p>
-      <p>
-        Desenvolvido por
-        <a
-          href="https://wa.me/5512997436507"
-          target="_blank"
-          class="hover:font-bold"
-          >João Vitor Mira</a
-        >
-      </p>
-    </footer>
   </body>
   <script src="./src/index.js"></script>
 </html>
