@@ -15,7 +15,7 @@
     ></script>
   </head>
   <body class="bg-redOrangeLight1 h-screen">
-    <header class="w-full fixed top-0 left-0 z-50">
+    <header class="w-full h-16 fixed top-0 left-0 z-50 bg-redOrangeLight1">
       <h1 class="sr-only">Effect Podologia</h1>
       <div class="flex justify-between py-2 px-4">
         <a href="#">
@@ -50,7 +50,49 @@
       </nav>
     </header>
     <main>
-      <section id="home"></section>
+      <section id="home" class="h-screen pt-16 px-6">
+        <div class="h-full w-full grid grid-cols-1 space-y-6">
+          <h2
+            class="text-2xl font-bold bg-gradient-to-r from-redOrangeDark to-redOrangeLight2 inline-block text-transparent bg-clip-text text-center"
+          >
+            SUA CLÍNICA DE PODOLOGIA DE CONFIANÇA
+          </h2>
+          <h3 class="text-lg text-redOrange2 text-center">
+            Podóloga com mais de 20 anos de experiência, dedicada ao cuidado e à
+            saúde dos pés. Especialista em tratamentos de
+            <strong>
+              unhas encravadas, calosidades, dores nos pés e prevenção de
+              problemas podológicos.
+            </strong>
+            Comprometida com o bem-estar e qualidade de vida dos pacientes,
+            oferecendo atendimento humanizado e eficaz.
+          </h3>
+          <figure>
+            <img
+              src="./src/images/podologa-example.jpg"
+              alt="Foto da podóloga Luana Garcia Medeiros"
+              class="rounded-2xl shadow-lg object-cover"
+            />
+            <figcaption class="">
+              <h2 class="text-lg text-redOrangeLight3 font-bold">
+                LUANA GARCIA MEDEIROS
+              </h2>
+              <h3 class="text-base text-redOrangeLight2">PODÓLOGA</h3>
+            </figcaption>
+          </figure>
+          <div class="grid grid-cols-1 place-items-center space-y-6">
+            <a
+              href="https://wa.me//5512997095226?text=Olá,%20tenho%20interesse%20em%20agendar%20uma%20consulta!"
+              target="_blank"
+            >
+              <button class="button w-[160px]">AGENDE SEU HORÁRIO</button>
+            </a>
+            <a href="#services">
+              <button class="button w-[160px]">NOSSOS PROCEDIMENTOS</button>
+            </a>
+          </div>
+        </div>
+      </section>
       <section id="services"></section>
       <section id="infrastructure"></section>
       <section id="reviews"></section>
