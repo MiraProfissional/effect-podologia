@@ -23,4 +23,20 @@
   .serviceCardBottomBar {
     @apply absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2;
   }
+
+  .reviewCard {
+    @apply rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark opacity-0 blur-sm;
+  }
+
+  .reviewLeftCard {
+    @apply transform -translate-x-10 transition-all duration-500;
+  }
+
+  .reviewRightCard {
+    @apply transform translate-x-10 transition-all duration-500;
+  }
+
+  .visibleReviewCard {
+    @apply opacity-100 translate-x-0 blur-0;
+  }
 }
