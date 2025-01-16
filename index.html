@@ -15,7 +15,7 @@
     ></script>
   </head>
   <body class="bg-redOrangeLight1 h-screen">
-    <header class="w-full h-16 fixed top-0 left-0 z-50 bg-redOrangeLight1">
+    <header class="w-full h-16 fixed z-50 bg-redOrangeLight1">
       <h1 class="sr-only">Effect Podologia</h1>
       <div class="flex justify-between py-2 px-4">
         <a href="#">
@@ -50,7 +50,7 @@
       </nav>
     </header>
     <main>
-      <section id="home" class="h-screen pt-16 px-6">
+      <section id="home" class="min-h-screen pt-16 px-6">
         <div class="h-full w-full grid grid-cols-1 space-y-6">
           <h2
             class="text-2xl font-bold bg-gradient-to-r from-redOrangeDark to-redOrangeLight2 inline-block text-transparent bg-clip-text text-center"
@@ -71,29 +71,32 @@
             <img
               src="./src/images/podologa-example.jpg"
               alt="Foto da podóloga Luana Garcia Medeiros"
-              class="rounded-2xl shadow-lg object-cover"
+              class=" rounded-2xl shadow-lg object-cover"
             />
-            <figcaption class="">
+            <figcaption>
               <h2 class="text-lg text-redOrangeLight3 font-bold">
                 LUANA GARCIA MEDEIROS
               </h2>
               <h3 class="text-base text-redOrangeLight2">PODÓLOGA</h3>
             </figcaption>
           </figure>
-          <div class="grid grid-cols-1 place-items-center space-y-6">
+          <div class="grid grid-cols-1 gap-6 place-items-center p-10">
             <a
               href="https://wa.me//5512997095226?text=Olá,%20tenho%20interesse%20em%20agendar%20uma%20consulta!"
               target="_blank"
+              class="w-full"
             >
-              <button class="button w-[160px]">AGENDE SEU HORÁRIO</button>
+              <button aria-label="Agendar seu horário" class="button w-full text-lg">AGENDE SEU HORÁRIO</button>
             </a>
-            <a href="#services">
-              <button class="button w-[160px]">NOSSOS PROCEDIMENTOS</button>
+            <a href="#services" class="w-full">
+              <button aria-label="Nossos procedimentos" class="button w-full text-lg">NOSSOS PROCEDIMENTOS</button>
             </a>
           </div>
         </div>
       </section>
-      <section id="services"></section>
+      <section id="services" class="">
+
+      </section>
       <section id="infrastructure"></section>
       <section id="reviews"></section>
       <section id="location"></section>
