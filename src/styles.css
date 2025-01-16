@@ -11,6 +11,16 @@
 
 @layer components {
   .button {
-    @apply border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-lg text-white font-bold font-sara px-4 py-2;
+    @apply border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-xl text-white font-bold font-sara px-4 py-2;
+  }
+}
+
+@layer components {
+  .serviceCard {
+    @apply w-4/5 min-h-full relative rounded-t-3xl shadow-xl bg-redOrangeLight4 text-center;
+  }
+
+  .serviceCardBottomBar {
+    @apply absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2;
   }
 }
