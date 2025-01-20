@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR" class="scroll-smooth scroll-pt-[80px]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
     ></script>
   </head>
   <body class="bg-redOrangeLight1 h-screen">
-    <header class="w-full h-16 fixed z-50 bg-redOrangeLight1">
+    <header class="w-full h-16 fixed z-50 bg-redOrangeLight1 sm:h-20">
       <h1 class="sr-only">Effect Podologia</h1>
       <div class="h-full flex justify-between py-2 px-4">
         <a href="#">
@@ -32,7 +32,7 @@
           aria-controls="mobile-navbar"
           aria-expanded="false"
           aria-label="Abrir menu mobile"
-          class="text-redOrangeLight2 text-xl"
+          class="text-redOrangeLight2 text-xl sm:text-3xl"
         >
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -50,14 +50,14 @@
       </nav>
     </header>
     <main>
-      <section id="home" class="min-h-screen pt-20 px-6">
+      <section id="home" class="min-h-screen pt-20 px-6 sm:px-10 sm:pt-24">
         <div class="h-full w-full grid grid-cols-1 space-y-6">
           <h2
-            class="text-3xl font-bold bg-gradient-to-r from-redOrangeDark to-redOrangeLight2 inline-block text-transparent bg-clip-text text-center"
+            class="text-3xl font-bold bg-gradient-to-r from-redOrangeDark to-redOrangeLight2 inline-block text-transparent bg-clip-text text-center sm:text-4xl"
           >
             SUA CLÍNICA DE PODOLOGIA DE CONFIANÇA
           </h2>
-          <h3 class="text-lg text-redOrange2 text-center">
+          <h3 class="text-lg text-redOrange2 text-center sm:text-xl">
             Podóloga com mais de 20 anos de experiência, dedicada ao cuidado e à
             saúde dos pés. Especialista em tratamentos de
             <strong>
@@ -74,10 +74,10 @@
               class="rounded-2xl shadow-lg object-cover"
             />
             <figcaption>
-              <h2 class="text-lg text-redOrangeLight3 font-bold">
+              <h2 class="text-lg text-redOrangeLight3 font-bold sm:text-xl">
                 LUANA GARCIA MEDEIROS
               </h2>
-              <h3 class="text-base text-redOrangeLight2">PODÓLOGA</h3>
+              <h3 class="text-base text-redOrangeLight2 sm:text-lg">PODÓLOGA</h3>
             </figcaption>
           </figure>
           <div class="grid grid-cols-1 gap-6 place-items-center p-10">
@@ -88,7 +88,7 @@
             >
               <button
                 aria-label="Agendar seu horário"
-                class="button w-full text-lg"
+                class="button w-full text-lg sm:text-xl"
               >
                 AGENDE SEU HORÁRIO
               </button>
@@ -96,7 +96,7 @@
             <a href="#services" class="w-full">
               <button
                 aria-label="Nossos procedimentos"
-                class="button w-full text-lg"
+                class="button w-full text-lg sm:text-xl"
               >
                 NOSSOS PROCEDIMENTOS
               </button>
@@ -105,20 +105,27 @@
         </div>
       </section>
       <section id="services" class="min-h-screen">
-        <div class="h-40 w-full bg-redOrangeLight3 text-center p-4">
-          <h2 class="text-3xl text-redOrangeDark">
-            <strong>Pare de sofrer</strong> <br />com unha encravada!
-          </h2>
-          <h3 class="text-xl text-white font-bold">
-            Agende uma avaliação agora mesmo.
-          </h3>
+        <div class="h-40 w-full bg-redOrangeLight3 text-center p-4 sm:relative">
+          <img
+            src="./src/images/background-topbar-section-2.jpg"
+            alt="Background visual"
+            class="hidden sm:block absolute inset-0 w-full h-full object-cover"
+          />
+          <div class="h-full sm:relative sm:z-10 sm:text-left sm:flex sm:flex-col sm:justify-center sm:items-start sm:px-10">
+            <h2 class="text-3xl text-redOrangeDark sm:text-4xl">
+              <strong>Pare de sofrer</strong> <br />com unha encravada!
+            </h2>
+            <h3 class="text-xl text-white font-bold">
+              Agende uma avaliação agora mesmo.
+            </h3>
+          </div>
         </div>
         <div class="p-6">
-          <h2 class="text-center text-3xl text-redOrange2 mb-10">
+          <h2 class="text-center text-3xl text-redOrange2 mb-10 sm:text-4xl">
             Nossos principais procedimentos
           </h2>
           <div class="grid grid-cols-1 gap-10 place-items-center">
-            <div class="serviceCard">
+            <div class="serviceCard max-w-80">
               <figure class="h-3/5 w-full">
                 <img
                   src="./src/images/service-unha-encravada.jpg"
@@ -127,20 +134,20 @@
                 />
                 <figcaption class="p-2">
                   <h3
-                    class="font-bold text-redOrangeLight3 leading-none text-lg"
+                    class="font-bold text-redOrangeLight3 leading-none text-lg sm:text-xl"
                   >
                     TRATAMENTO DE UNHA ENCRAVADA
                   </h3>
                 </figcaption>
               </figure>
-              <h4 class="text-redOrange2 text-sm p-2">
+              <h4 class="text-redOrange2 text-base p-2 sm:text-lg sm:px-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
                 commodo nunc, vel placerat mi.
               </h4>
               <span class="serviceCardBottomBar"></span>
             </div>
-            <div class="serviceCard">
+            <div class="serviceCard max-w-80">
               <figure class="h-3/5 w-full">
                 <img
                   src="./src/images/service-calosidades.jpg"
@@ -149,20 +156,20 @@
                 />
                 <figcaption class="p-2">
                   <h3
-                    class="font-bold text-redOrangeLight3 leading-none text-lg"
+                    class="font-bold text-redOrangeLight3 leading-none text-lg sm:text-xl"
                   >
                     CUIDADO COM CALOS E CALOSIDADES
                   </h3>
                 </figcaption>
               </figure>
-              <h4 class="text-redOrange2 text-sm p-2">
+              <h4 class="text-redOrange2 text-base p-2 sm:text-lg sm:px-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
                 commodo nunc, vel placerat mi.
               </h4>
               <span class="serviceCardBottomBar"></span>
             </div>
-            <div class="serviceCard">
+            <div class="serviceCard max-w-80">
               <figure class="h-3/5">
                 <img
                   src="./src/images/service-terapia.jpg"
@@ -171,20 +178,20 @@
                 />
                 <figcaption class="p-2">
                   <h3
-                    class="font-bold text-redOrangeLight3 leading-none text-lg"
+                    class="font-bold text-redOrangeLight3 leading-none text-lg sm:text-xl"
                   >
                     TERAPIA PARA DOR NOS PÉS COM REFLEXOLOGIA
                   </h3>
                 </figcaption>
               </figure>
-              <h4 class="text-redOrange2 text-sm p-2">
+              <h4 class="text-redOrange2 text-base p-2 sm:text-lg sm:px-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
                 commodo nunc, vel placerat mi.
               </h4>
               <span class="serviceCardBottomBar"></span>
             </div>
-            <div class="serviceCard">
+            <div class="serviceCard max-w-80">
               <figure>
                 <img
                   src="./src/images/service-cuidados.jpg"
@@ -193,13 +200,13 @@
                 />
                 <figcaption class="p-2">
                   <h3
-                    class="font-bold text-redOrangeLight3 leading-none text-lg"
+                    class="font-bold text-redOrangeLight3 leading-none text-lg sm:text-xl"
                   >
                     ORIENTAÇÃO SOBRE CUIDADOS DIÁRIOS
                   </h3>
                 </figcaption>
               </figure>
-              <h4 class="text-redOrange2 text-sm p-2">
+              <h4 class="text-redOrange2 text-base p-2 sm:text-lg sm:px-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 vel elit ultrices, luctus libero quis, luctus orci. Maecenas et
                 commodo nunc, vel placerat mi.
@@ -211,10 +218,10 @@
       </section>
       <section
         id="infrastructure"
-        class="min-h-screen bg-redOrangeDark text-redOrangeLight2 p-4"
+        class="min-h-screen bg-redOrangeDark text-redOrangeLight2 p-4 sm:px-8"
       >
         <div class="text-center space-y-8">
-          <h2 class="text-3xl">
+          <h2 class="text-3xl sm:text-4xl">
             Um espaço feito para o <strong>seu conforto!</strong>
           </h2>
           <h3 class="text-xl">
@@ -231,32 +238,33 @@
               class="w-full h-full object-cover rounded-xl"
             />
           </figure>
-
-          <div>
-            <span class="text-3xl">
-              <i class="fa-duotone fa-solid fa-mug-hot"></i>
-            </span>
-            <h4 class="font-bold text-2xl">Café Bar</h4>
-            <h5 class="text-lg">
-              Aqui, cuidar dos seus pés também é sinônimo de relaxar! Aproveite
-              nosso cantinho especial com café fresquinho e diversas opções de
-              bebidas para o seu conforto.
-            </h5>
-          </div>
-          <div>
-            <span class="text-3xl">
-              <i class="fa-solid fa-spa"></i>
-            </span>
-            <h4 class="font-bold text-2xl">Spa Shop</h4>
-            <h5 class="text-lg">
-              Explore nossa loja exclusiva com produtos de alta qualidade para o
-              cuidado dos seus pés: cremes, palmilhas e itens selecionados para
-              promover o seu bem-estar e saúde.
-            </h5>
+          <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-4">
+            <div>
+              <span class="text-3xl">
+                <i class="fa-duotone fa-solid fa-mug-hot"></i>
+              </span>
+              <h4 class="font-bold text-2xl">Café Bar</h4>
+              <h5 class="text-lg">
+                Aqui, cuidar dos seus pés também é sinônimo de relaxar! Aproveite
+                nosso cantinho especial com café fresquinho e diversas opções de
+                bebidas para o seu conforto.
+              </h5>
+            </div>
+            <div>
+              <span class="text-3xl">
+                <i class="fa-solid fa-spa"></i>
+              </span>
+              <h4 class="font-bold text-2xl">Spa Shop</h4>
+              <h5 class="text-lg">
+                Explore nossa loja exclusiva com produtos de alta qualidade para o
+                cuidado dos seus pés: cremes, palmilhas e itens selecionados para
+                promover o seu bem-estar e saúde.
+              </h5>
+            </div>
           </div>
         </div>
       </section>
-      <section id="reviews" class="min-h-screen p-4">
+      <section id="reviews" class="min-h-screen p-4 sm:px-8">
         <div
           class="grid grid-cols-1 place-items-center text-center text-redOrangeDark"
         >
@@ -370,20 +378,18 @@
             <p>Jardim das Industrias - São José dos Campos, SP</p>
           </address>
         </div>
-        <div class="place-items-center">
+        <div class="w-[250px] h-[300px] m-auto sm:w-[400px] sm:h-[450px]">
           <iframe
             title="Localização da Effect Podologia no Google Maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.5716288576973!2d-45.920592725068246!3d-23.22227697903419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc359dfc306077%3A0x205f8cf69bc2eb0c!2sR.%20Heitor%20de%20Andrade%2C%20619%20-%20Jardim%20das%20Industrias%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012241-000!5e0!3m2!1spt-BR!2sbr!4v1736352154251!5m2!1spt-BR!2sbr"
-            width="250"
-            height="300"
-            class="border-solid border-[3px] border-redOrangeLight2 rounded shadow-lg max-w-full"
+            class="border-solid border-[3px] border-redOrangeLight2 rounded shadow-lg w-full h-full"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           >
           </iframe>
         </div>
-        <div>
+        <div class="w-4/5 m-auto">
           <a
             href="https://wa.me//5512997095226?text=Olá,%20tenho%20interesse%20em%20agendar%20uma%20consulta!"
             target="_blank"
@@ -398,6 +404,7 @@
           </a>
         </div>
       </section>
+    </main>
       <footer
       class="text-center p-3 bg-gradient-to-b from-redOrangeLight1 to-redOrangeLight2 text-redOrange2 font-sara mt-10"
     >
@@ -407,12 +414,11 @@
         <a
           href="https://wa.me/5512997436507"
           target="_blank"
-          class="hover:font-bold"
+          class="font-bold"
           >João Vitor Mira</a
         >
       </p>
     </footer>
-    </main>
   </body>
   <script src="./src/index.js"></script>
 </html>
