@@ -120,7 +120,7 @@ const activeServiceCardsAnimation = (entries) => {
 };
 
 const serviceCardsObserverOptions = {
-  threshold: 0.8,
+  threshold: 0.7,
 };
 
 const serviceCardsObserver = new IntersectionObserver(
