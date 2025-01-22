@@ -10,26 +10,6 @@
 }
 
 @layer components {
-  .serviceCard {
-    @apply rounded-t-3xl shadow-xl bg-redOrangeLight4 text-center max-w-72 w-4/5 min-h-full relative lg:text-left;
-  }
-
-  .serviceCardBottomBar {
-    @apply absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2;
-  }
-
-  .reviewCard {
-    @apply rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark opacity-0 blur-sm lg:w-4/5;
-  }
-
-  .visibleReviewCard {
-    @apply opacity-100 translate-x-0 blur-0;
-  }
-
-  .button {
-    @apply border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-xl text-white font-bold font-sara px-4 py-2;
-  }
-
   .navLink {
     @apply relative text-redOrangeLight2 font-bold hover:text-redOrangeDark;
   }
@@ -48,5 +28,57 @@
 
   .navLink.active::after {
     @apply w-[100%];
+  }
+
+  .serviceCard {
+    @apply rounded-t-3xl shadow-xl bg-redOrangeLight4 text-center max-w-72 w-4/5 min-h-full relative;
+  }
+
+  .serviceCardBottomBar {
+    @apply absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2;
+  }
+
+  .hiddenServiceCard {
+    @apply opacity-0 -translate-x-10 transition-all duration-500 blur-sm ease-out;
+  }
+
+  .visibleServiceCard {
+    @apply opacity-100 translate-x-0 blur-0;
+  }
+
+  .hiddenServiceCard:nth-child(2) {
+    @apply delay-[200ms];
+  }
+
+  .hiddenServiceCard:nth-child(3) {
+    @apply delay-[400ms];
+  }
+
+  .hiddenServiceCard:nth-child(4) {
+    @apply delay-[600ms];
+  }
+
+  .reviewCard {
+    @apply rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark lg:w-4/5;
+  }
+
+  .hiddenReviewCard {
+    @apply opacity-0 blur-sm;
+  }
+
+  .reviewLeftCard {
+    @apply transform -translate-x-10 transition-all duration-500;
+  }
+
+  .reviewRightCard {
+    @apply transform translate-x-10 transition-all duration-500;
+  }
+
+  .visibleReviewCard {
+    @apply opacity-100 translate-x-0 blur-0;
+  }
+
+  .button {
+    @apply border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-xl text-white font-bold font-sara px-4 py-2;
   }
 }

@@ -167,7 +167,7 @@
             Nossos principais procedimentos
           </h2>
           <div class="grid grid-cols-1 gap-10 place-items-center md:grid-cols-2 md:gap-x-0 md:px-6 lg:grid-cols-4 lg:px-0">
-            <div class="serviceCard">
+            <div class="serviceCard lg:hiddenServiceCard">
               <div>
                 <figure>
                   <img
@@ -193,7 +193,7 @@
               </div>
               <span class="serviceCardBottomBar"></span>
             </div>
-            <div class="serviceCard">
+            <div class="serviceCard lg:hiddenServiceCard">
               <div>
                 <figure>
                   <img
@@ -219,7 +219,7 @@
               </div>
               <span class="serviceCardBottomBar"></span>
             </div>
-            <div class="serviceCard">
+            <div class="serviceCard lg:hiddenServiceCard">
               <div>
                 <figure>
                   <img
@@ -245,7 +245,7 @@
               </div>
               <span class="serviceCardBottomBar"></span>
             </div>
-            <div class="serviceCard">
+            <div class="serviceCard lg:hiddenServiceCard">
               <div>
                 <figure>
                   <img
@@ -277,48 +277,59 @@
       </section>
       <section
         id="infrastructure"
-        class="min-h-screen bg-redOrangeDark text-redOrangeLight2 p-4 sm:px-8"
+        class="min-h-screen bg-redOrangeDark text-redOrangeLight2 p-4 sm:px-8 lg:px-0 lg:content-center"
       >
-        <div class="text-center space-y-8">
-          <h2 class="text-3xl sm:text-4xl">
-            Um espaço feito para o <strong>seu conforto!</strong>
-          </h2>
-          <h3 class="text-xl">
-            Aqui na nossa clínica, cada detalhe foi pensado para
-            <strong>você se sentir à vontade!</strong> Contamos com equipamentos
-            modernos para garantir a melhor experiência, além de um ambiente
-            acolhedor leve e cheio de boas vibrações. Tudo para que você cuide
-            da saúde dos seus pés com conforto e tranquilidade.
-          </h3>
-          <figure>
-            <img
-              src="./src/images/background-sidebar-section-3.jpg"
-              alt=""
-              class="w-full h-full object-cover rounded-xl"
-            />
-          </figure>
-          <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-4">
-            <div>
-              <span class="text-3xl">
-                <i class="fa-duotone fa-solid fa-mug-hot"></i>
-              </span>
-              <h4 class="font-bold text-2xl">Café Bar</h4>
-              <h5 class="text-lg">
-                Aqui, cuidar dos seus pés também é sinônimo de relaxar! Aproveite
-                nosso cantinho especial com café fresquinho e diversas opções de
-                bebidas para o seu conforto.
-              </h5>
-            </div>
-            <div>
-              <span class="text-3xl">
-                <i class="fa-solid fa-spa"></i>
-              </span>
-              <h4 class="font-bold text-2xl">Spa Shop</h4>
-              <h5 class="text-lg">
-                Explore nossa loja exclusiva com produtos de alta qualidade para o
-                cuidado dos seus pés: cremes, palmilhas e itens selecionados para
-                promover o seu bem-estar e saúde.
-              </h5>
+        <div class="grid grid-cols-1 text-center space-y-8 lg:grid-cols-2 lg:gap-x-10">
+          <div class="hidden lg:flex lg:w-full lg:h-full">
+            <figure class="h-full w-full">
+              <img
+                src="./src/images/background-sidebar-section-3.jpg"
+                alt=""
+                class="w-full h-full object-cover object-right rounded-r-xl shadow-2xl"
+              />
+            </figure>
+          </div>
+          <div class="lg:pr-6 lg:text-left space-y-6">
+            <h2 class="text-3xl sm:text-4xl">
+              Um espaço feito para o <strong>seu conforto!</strong>
+            </h2>
+            <h3 class="text-xl">
+              Aqui na nossa clínica, cada detalhe foi pensado para
+              <strong>você se sentir à vontade!</strong> Contamos com equipamentos
+              modernos para garantir a melhor experiência, além de um ambiente
+              acolhedor leve e cheio de boas vibrações. Tudo para que você cuide
+              da saúde dos seus pés com conforto e tranquilidade.
+            </h3>
+            <figure class="lg:hidden">
+              <img
+                src="./src/images/background-sidebar-section-3.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-xl shadow-2xl"
+              />
+            </figure>
+            <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-4">
+              <div>
+                <span class="text-3xl">
+                  <i class="fa-duotone fa-solid fa-mug-hot"></i>
+                </span>
+                <h4 class="font-bold text-2xl">Café Bar</h4>
+                <h5 class="text-lg lg:text-base">
+                  Aqui, cuidar dos seus pés também é sinônimo de relaxar! Aproveite
+                  nosso cantinho especial com café fresquinho e diversas opções de
+                  bebidas para o seu conforto.
+                </h5>
+              </div>
+              <div>
+                <span class="text-3xl">
+                  <i class="fa-solid fa-spa"></i>
+                </span>
+                <h4 class="font-bold text-2xl lg:line">Spa Shop</h4>
+                <h5 class="text-lg lg:text-base">
+                  Explore nossa loja exclusiva com produtos de alta qualidade para o
+                  cuidado dos seus pés: cremes, palmilhas e itens selecionados para
+                  promover o seu bem-estar e saúde.
+                </h5>
+              </div>
             </div>
           </div>
         </div>
@@ -349,7 +360,7 @@
           </p>
         </div>
         <div class="pt-16 space-y-10 lg:place-items-center">
-          <div class="relative reviewCard">
+          <div class="relative reviewCard lg:hiddenReviewCard lg:reviewLeftCard">
             <figure class="absolute -top-8 left-1/2 transform -translate-x-1/2">
               <img
                 src="./src/images/woman-avatar.png"
@@ -368,7 +379,7 @@
               </p>
             </div>
           </div>
-          <div class="relative reviewCard">
+          <div class="relative reviewCard lg:hiddenReviewCard lg:reviewRightCard">
             <figure class="absolute -top-8 left-1/2 transform -translate-x-1/2">
               <img
                 src="./src/images/woman-avatar.png"
@@ -385,7 +396,7 @@
               </p>
             </div>
           </div>
-          <div class="relative reviewCard">
+          <div class="relative reviewCard lg:hiddenReviewCard lg:reviewLeftCard">
             <figure class="absolute -top-8 left-1/2 transform -translate-x-1/2">
               <img
                 src="./src/images/woman-avatar.png"
@@ -402,7 +413,7 @@
               </p>
             </div>
           </div>
-          <div class="relative reviewCard">
+          <div class="relative reviewCard lg:hiddenReviewCard lg:reviewRightCard">
             <figure class="absolute -top-8 left-1/2 transform -translate-x-1/2">
               <img
                 src="./src/images/woman-avatar.png"
