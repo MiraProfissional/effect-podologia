@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
-    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify && cp ./index.html ./dist/ && sed -i 's|<link href=\"./dist/styles.css\"|<link href=\"./styles.css\"|g' ./dist/index.html && cp ./src/index.js ./dist/ && sed -i 's|./src/index.js|./index.js|g' ./dist/index.html && cp -r ./src/images ./dist/ && sed -i 's|./src/images/|/images/|g' ./dist/index.html",
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify && cp ./index.html ./dist/ && sed -i 's|<link href=\"./dist/styles.css\"|<link href=\"./styles.css\"|g' ./dist/index.html && cp ./src/index.js ./dist/ && sed -i 's|./src/index.js|./index.js|g' ./dist/index.html && cp -r ./src/images ./dist/ && sed -i 's|./src/images/|./images/|g' ./dist/index.html && mkdir -p ./dist/fonts && cp ./src/fonts/sans-sara.ttf ./dist/fonts/ && sed -i 's|./src/fonts/|./fonts/|g' ./dist/index.html",
     "format": "prettier --write ."
   },
   "repository": {
@@ -28,6 +28,7 @@
     "globals": "^15.14.0",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.10",
     "tailwindcss": "^3.4.17"
   }
 }

@@ -4,63 +4,81 @@
 
 @font-face {
   font-family: 'sara';
-  src: url('http://localhost:5500/src/fonts/sans-sara.ttf') format('truetype');
+  src: url('./fonts/sans-sara.ttf') format('truetype');
   font-weight: 'normal';
   font-style: 'normal';
 }
 
-.navLink {
-  @apply relative text-redOrangeLight2 font-bold hover:text-redOrangeDark;
-}
+@layer components {
+  .navLink {
+    @apply relative text-redOrangeLight2 font-bold hover:text-redOrangeDark;
+  }
 
-.navLink::after {
-  @apply content-[''] bg-redOrangeDark h-[3px] w-[0%] left-0 -bottom-[5px] absolute duration-300;
-}
+  .navLink::after {
+    @apply content-[''] bg-redOrangeDark h-[3px] w-[0%] left-0 -bottom-[5px] absolute duration-300;
+  }
 
-.navLink:hover::after {
-  @apply w-[100%];
-}
+  .navLink:hover::after {
+    @apply w-[100%];
+  }
 
-.navLink.active {
-  @apply text-redOrangeDark scale-105 transform transition duration-300;
-}
+  .navLink.active {
+    @apply text-redOrangeDark scale-105 transform transition duration-300;
+  }
 
-.navLink.active::after {
-  @apply w-[100%];
-}
+  .navLink.active::after {
+    @apply w-[100%];
+  }
 
-.hiddenServiceCard {
-  @apply opacity-0 -translate-x-10 transition-all duration-500 blur-sm;
-}
+  .serviceCard {
+    @apply rounded-t-3xl shadow-xl bg-redOrangeLight4 text-center max-w-72 w-4/5 min-h-full relative;
+  }
 
-.visibleServiceCard {
-  @apply opacity-100 translate-x-0 blur-0;
-}
+  .serviceCardBottomBar {
+    @apply absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-redOrangeDark to-redOrangeLight2;
+  }
 
-.hiddenServiceCard:nth-child(2) {
-  @apply delay-[200ms];
-}
+  .hiddenServiceCard {
+    @apply opacity-0 -translate-x-10 transition-all duration-500 blur-sm ease-out;
+  }
 
-.hiddenServiceCard:nth-child(3) {
-  @apply delay-[400ms];
-}
+  .visibleServiceCard {
+    @apply opacity-100 translate-x-0 blur-0;
+  }
 
-.hiddenServiceCard:nth-child(4) {
-  @apply delay-[600ms];
-}
+  .hiddenServiceCard:nth-child(2) {
+    @apply delay-[200ms];
+  }
 
-.reviewCard {
-  @apply opacity-0 blur-sm;
-}
+  .hiddenServiceCard:nth-child(3) {
+    @apply delay-[400ms];
+  }
 
-.reviewLeftCard {
-  @apply transform -translate-x-10 transition-all duration-500;
-}
+  .hiddenServiceCard:nth-child(4) {
+    @apply delay-[600ms];
+  }
 
-.reviewRightCard {
-  @apply transform translate-x-10 transition-all duration-500;
-}
+  .reviewCard {
+    @apply rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark lg:w-4/5;
+  }
 
-.visibleReviewCard {
-  @apply opacity-100 translate-x-0 blur-0;
+  .hiddenReviewCard {
+    @apply opacity-0 blur-sm;
+  }
+
+  .reviewLeftCard {
+    @apply transform -translate-x-10 transition-all duration-500;
+  }
+
+  .reviewRightCard {
+    @apply transform translate-x-10 transition-all duration-500;
+  }
+
+  .visibleReviewCard {
+    @apply opacity-100 translate-x-0 blur-0;
+  }
+
+  .button {
+    @apply border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-xl text-white font-bold font-sara px-4 py-2 hover:bg-redOrangeLight4 hover:text-redOrangeDark hover:border-gray-400 hover:shadow-2xl hover:scale-105 transform transition duration-300;
+  }
 }
