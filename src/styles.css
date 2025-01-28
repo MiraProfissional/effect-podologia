@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'sara';
-  src: url('./fonts/sans-sara.ttf') format('truetype');
-  font-weight: 'normal';
-  font-style: 'normal';
-}
-
 @layer components {
   .navLink {
     @apply relative text-redOrangeLight2 font-bold hover:text-redOrangeDark;
