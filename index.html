@@ -18,29 +18,31 @@
     <header class="w-full h-16 fixed z-50 bg-redOrangeLight1 sm:h-20">
       <h1 class="sr-only">Effect Podologia</h1>
       <div class="h-full flex justify-between py-2 px-4 lg:hidden">
-        <a href="#">
-          <figure class="w-full h-full">
-            <img
-              src="./src/images/logos/terracotta-horizontal.png"
-              alt="Logo da Effect Podologia, representando saúde e cuidado com os pés"
-              class="w-full h-full object-cover"
-            />
-          </figure>
-        </a>
-        <button
-          id="menu-toggle"
-          aria-controls="mobile-navbar"
-          aria-expanded="false"
-          aria-label="Abrir menu mobile"
-          class="text-redOrangeLight2 text-xl sm:text-3xl"
-        >
-          <i class="fa-solid fa-bars"></i>
-        </button>
+        <div>
+            <figure class="w-[30vw] h-full">
+              <img
+                src="./src/images/logos/terracotta-horizontal.png"
+                alt="Logo da Effect Podologia, representando saúde e cuidado com os pés"
+                class="w-full h-full object-contain"
+              />
+            </figure>
+        </div>
+        <div class="content-center">
+          <button
+            id="menu-toggle"
+            aria-controls="mobile-navbar"
+            aria-expanded="false"
+            aria-label="Abrir menu mobile"
+            class="text-redOrangeLight2 text-xl sm:text-3xl"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
       </div>
       <nav
         id="mobile-navbar"
         role="navigation"
-        class="hidden grid-cols-1 place-items-center bg-redOrangeLight1 text-redOrangeLight2 font-bold text-base space-y-2 border-b-2 border-redOrangeLight2 p-2"
+        class="hidden grid-cols-1 text-center bg-redOrangeLight1 text-redOrangeLight2 font-bold text-base space-y-2 border-b-2 border-redOrangeLight2 p-2"
       >
         <a href="#" class="block"> INÍCIO </a>
         <a href="#services" class="block"> SERVIÇOS </a>
