@@ -79,6 +79,6 @@
   }
 
   .button {
-    @apply border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-xl text-white font-bold font-sara px-4 py-2 hover:bg-redOrangeLight4 hover:text-redOrangeDark hover:border-gray-400 hover:shadow-2xl hover:scale-105 transform transition duration-300;
+    @apply border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-xl text-redOrangeLight1 font-bold font-sara px-4 py-2 hover:bg-redOrangeLight4 hover:text-redOrangeDark hover:border-gray-400 hover:shadow-2xl hover:scale-105 transform transition duration-300;
   }
 }
