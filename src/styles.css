@@ -59,7 +59,7 @@
   }
 
   .reviewCard {
-    @apply rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark lg:w-4/5;
+    @apply text-center rounded-3xl bg-redOrangeLight4 shadow-xl border-solid border-[3px] border-redOrangeLight3 p-5 text-redOrangeDark lg:w-4/5 xl:w-3/5;
   }
 
   .hiddenReviewCard {
@@ -79,6 +79,6 @@
   }
 
   .button {
-    @apply border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-xl text-redOrangeLight1 font-bold font-sara px-4 py-2 hover:bg-redOrangeLight4 hover:text-redOrangeDark hover:border-gray-400 hover:shadow-2xl hover:scale-105 transform transition duration-300;
+    @apply border-solid border-[3px] border-redOrangeDark rounded-3xl bg-redOrangeDark shadow-xl text-redOrangeLight1 font-bold px-4 py-2 sm:text-lg lg:hover:bg-redOrangeLight4 lg:hover:text-redOrangeDark lg:hover:border-gray-400 lg:hover:shadow-2xl lg:hover:scale-105 transform transition duration-300;
   }
 }
