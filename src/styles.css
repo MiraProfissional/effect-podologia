@@ -31,7 +31,7 @@
   }
 
   .newsCard {
-    @apply rounded-3xl bg-gradient-to-r from-redOrangeLight3 to-redOrangeDark shadow-xl p-5 text-white relative max-w-72 w-4/5 min-h-full;
+    @apply rounded-3xl bg-gradient-to-r from-redOrangeLight3 to-redOrangeDark shadow-xl p-5 text-white relative max-w-80 w-4/5 min-h-full;
   }
 
   .serviceCard {
