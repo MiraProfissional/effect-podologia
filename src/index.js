@@ -131,3 +131,28 @@ const serviceCardsObserver = new IntersectionObserver(
 serviceCards.forEach((card) => {
   serviceCardsObserver.observe(card);
 });
+
+const newsCard = document.querySelectorAll('.newsCard');
+
+const activeNewsCardAnimation = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('lg:visibleNewsCard');
+    } else {
+      entry.target.classList.remove('lg:visibleNewsCard');
+    }
+  });
+};
+
+const newsCardObserverOptions = {
+  threshold: 0.7,
+};
+
+const newsCardObserver = new IntersectionObserver(
+  activeNewsCardAnimation,
+  newsCardObserverOptions
+);
+
+newsCard.forEach((card) => {
+  newsCardObserver.observe(card);
+});
