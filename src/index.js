@@ -57,14 +57,16 @@ const getCorrespondingNavLink = (sectionId) => {
   switch (sectionId) {
     case 'home':
       return navLinks[0];
-    case 'services':
+    case 'news':
       return navLinks[1];
-    case 'infrastructure':
+    case 'services':
       return navLinks[2];
-    case 'reviews':
+    case 'infrastructure':
       return navLinks[3];
-    case 'location':
+    case 'reviews':
       return navLinks[4];
+    case 'location':
+      return navLinks[5];
   }
 };
 
