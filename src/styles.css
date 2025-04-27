@@ -23,6 +23,18 @@
     @apply w-[100%];
   }
 
+  .newsCard {
+    @apply rounded-3xl bg-gradient-to-r from-redOrangeLight3 to-redOrangeDark shadow-xl p-5 text-white relative max-w-80 w-4/5 min-h-full;
+  }
+
+  .hiddenNewsCard {
+    @apply opacity-0 -translate-x-10 transition-all duration-500 blur-sm ease-out;
+  }
+
+  .visibleNewsCard {
+    @apply opacity-100 translate-x-0 blur-0;
+  }
+
   .serviceCard {
     @apply rounded-t-3xl shadow-xl bg-redOrangeLight4 text-center max-w-72 w-4/5 min-h-full relative;
   }

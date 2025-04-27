@@ -27,10 +27,10 @@
     <header class="w-full h-16 fixed z-50 bg-redOrangeLight1 sm:h-20">
       <h1 class="sr-only">Effect Podologia</h1>
       <div class="h-full flex justify-between py-2 px-4 lg:hidden">
-        <div>
+        <a href="#">
           <figure class="max-w-[30vw] h-full">
             <img
-              src="./src/images/logos/terracotta-horizontal.png"
+              src="./src/images/terracotta-horizontal.png"
               alt="Logo da Effect Podologia, representando saúde e cuidado com os pés"
               class="w-full h-full object-contain"
             />
@@ -54,6 +54,7 @@
         class="hidden grid-cols-1 text-center bg-redOrangeLight1 text-redOrangeLight2 font-bold text-base space-y-2 border-b-2 border-redOrangeLight2 p-2"
       >
         <a href="#" class="block"> INÍCIO </a>
+        <a href="#news" class="block"> NOVIDADES </a>
         <a href="#services" class="block"> SERVIÇOS </a>
         <a href="#infrastructure" class="block"> INFRAESTRUTURA </a>
         <a href="#reviews" class="block"> AVALIAÇÕES</a>
@@ -62,6 +63,7 @@
       <div class="hidden lg:block">
         <nav class="hidden lg:flex space-x-10 px-10 py-8 xl:px-16 2xl:text-lg">
           <a href="#" class="navLink"> INÍCIO </a>
+          <a href="#news" class="navLink"> NOVIDADES </a>
           <a href="#services" class="navLink"> SERVIÇOS </a>
           <a href="#infrastructure" class="navLink"> INFRAESTRUTURA </a>
           <a href="#reviews" class="navLink"> AVALIAÇÕES</a>
@@ -69,7 +71,7 @@
         </nav>
       </div>
     </header>
-    <main class="space-y-6 2xl:space-y-10">
+    <main>
       <section
         id="home"
         class="pt-20 px-6 sm:px-10 sm:pt-24 lg:pb-20 lg:pt-32 xl:px-16"
@@ -77,16 +79,14 @@
         <div
           class="grid grid-cols-1 space-y-6 lg:grid-cols-2 lg:space-y-0 lg:gap-x-10 xl:gap-0"
         >
-          <div class="text-center lg:text-left xl:pr-16 2xl:pr-0">
-            <a href="#">
-              <figure class="hidden lg:block w-2/5">
-                <img
-                  src="./src/images/logos/terracotta-horizontal.png"
-                  alt="Logo da Effect Podologia, representando saúde e cuidado com os pés"
-                  class="w-full h-full object-cover"
-                />
-              </figure>
-            </a>
+          <div class="text-center lg:text-left xl:pr-20 2xl:pr-0">
+            <figure class="hidden lg:block w-2/5">
+              <img
+                src="./src/images/terracotta-horizontal.png"
+                alt="Logo da Effect Podologia, representando saúde e cuidado com os pés"
+                class="w-full h-full object-cover"
+              />
+            </figure>
             <h2
               class="text-3xl font-bold bg-gradient-to-r from-redOrangeDark to-redOrangeLight2 inline-block text-transparent bg-clip-text mb-4 sm:text-3xl lg:mt-6 xl:text-4xl 2xl:text-5xl"
             >
@@ -129,10 +129,10 @@
           </div>
           <div>
             <figure
-              class="md:w-4/5 md:m-auto lg:h-[90%] lg:w-full 2xl:w-[90%] 2xl:mx-auto"
+              class="sm:h-[80%] md:w-4/5 md:m-auto lg:h-[90%] lg:w-full 2xl:w-[90%] 2xl:mx-auto"
             >
               <img
-                src="./src/images/podologa-example.jpg"
+                src="./src/images/podologa-luana.jpg"
                 alt="Foto da podóloga Luana Garcia Medeiros"
                 class="rounded-2xl shadow-lg object-cover w-full h-full"
               />
@@ -168,7 +168,107 @@
           </div>
         </div>
       </section>
-      <section id="services">
+      <section id="news" class="mt-6 2xl:mt-28">
+        <div class="px-6 lg:relative lg:px-16">
+          <img
+            src="./src/images/background-news-section.jpg"
+            alt="Background visual"
+            class="hidden lg:block absolute inset-0 w-full h-full object-cover"
+          />
+          <div class="lg:relative lg:z-30 lg:pt-8">
+            <div class="text-center text-redOrange2 mb-10">
+              <h2 class="text-4xl font-bold md:text-6xl 2xl:text-7xl">
+                NOVIDADES
+              </h2>
+              <h3 class="text-xl sm:tracking-[0.2em] 2xl:tracking-[0.5em]">
+                AQUI NO EFFECT PODOLOGIA
+              </h3>
+            </div>
+            <div
+              class="grid grid-cols-1 gap-24 place-items-center mt-24 lg:grid-cols-3 lg:gap-0"
+            >
+              <div class="newsCard lg:hiddenNewsCard">
+                <figure
+                  class="absolute -top-[60px] left-1/2 transform -translate-x-1/2"
+                >
+                  <img
+                    src="./src/images/news-spa-dos-pes.jpg"
+                    alt="Imagem de uma massagem relaxante nos pés proporcionando bem estar" 
+                    class="w-32 h-32 border-solid border-[3px] border-redOrangeDark rounded-full object-cover"
+                  />
+                </figure>
+                <div class="text-center">
+                  <h3
+                    class="font-bold text-xl pt-12 text-redOrangeLight1 2xl:text-2xl"
+                  >
+                    SPA DOS PÉS
+                  </h3>
+                  <p class="mt-4 2xl:text-lg">
+                    Dê um descanso aos seus pés com um spa revitalizante!
+                    Esfoliação, hidratação e massagem para suavidade e
+                    relaxamento.
+                  </p>
+                </div>
+              </div>
+              <div class="newsCard lg:hiddenNewsCard">
+                <figure
+                  class="absolute -top-[60px] left-1/2 transform -translate-x-1/2"
+                >
+                  <img
+                    src="./src/images/news-reflexologia-podal.jpg"
+                    alt="Imagem de uma massagem da reflexologia podal proporcionando bem estar"
+                    class="w-32 h-32 border-solid border-[3px] border-redOrangeDark rounded-full object-cover"
+                  />
+                </figure>
+                <div class="text-center">
+                  <h3
+                    class="font-bold text-xl pt-12 text-redOrangeLight1 2xl:text-2xl"
+                  >
+                    REFLEXOLOGIA PODAL
+                  </h3>
+                  <p class="mt-4 2xl:text-lg">
+                    A reflexologia podal estimula pontos estratégicos nos pés,
+                    promovendo relaxamento, alívio do estresse e bem estar.
+                  </p>
+                </div>
+              </div>
+              <div class="newsCard lg:hiddenNewsCard">
+                <figure
+                  class="absolute -top-[60px] left-1/2 transform -translate-x-1/2"
+                >
+                  <img
+                    src="./src/images/news-escalda-pes.jpg"
+                    alt="Imagem de pés no escalda-pés proporcionando bem estar"
+                    class="w-32 h-32 border-solid border-[3px] border-redOrangeDark rounded-full object-cover"
+                  />
+                </figure>
+                <div class="text-center">
+                  <h3
+                    class="font-bold text-xl pt-12 text-redOrangeLight1 2xl:text-2xl"
+                  >
+                    ESCALDA PÉS
+                  </h3>
+                  <p class="mt-4 2xl:text-lg">
+                    O escalda-pés alivía a tensão, ativa a circulação e reduz o
+                    inchaço, suavizando a pele e proporcionando bem-estar
+                    imediato.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center text-redOrangeDark mt-6 lg:pb-4">
+              <h4 class="text-xl xl:text-2xl">
+                <strong>Agende seu atendimento</strong><br />
+                e dê um presente para seus pés!
+              </h4>
+              <p class="mt-4 xl:text-lg">
+                Relaxe e <strong>renove-se!</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="mt-6 lg:mt-0">
         <div class="h-40 w-full bg-redOrangeLight3 sm:relative 2xl:h-48">
           <img
             src="./src/images/background-topbar-section-2.jpg"
@@ -253,8 +353,8 @@
               <div>
                 <figure>
                   <img
-                    src="./src/images/service-unha-encravada.jpg"
-                    alt="Foto de tratamento de micose com laser"
+                    src="./src/images/service-micose.jpg"
+                    alt="Foto de tratamento de micose"
                     class="w-full h-full object-cover rounded-t-3xl"
                   />
                   <figcaption class="p-2">
@@ -280,8 +380,8 @@
               <div>
                 <figure>
                   <img
-                    src="./src/images/service-calosidades.jpg"
-                    alt="Foto de órtese"
+                    src="./src/images/service-cuidados-diarios.jpg"
+                    alt="Foto de pés femininos bem cuidados"
                     class="w-full h-full object-cover rounded-t-3xl"
                   />
                   <figcaption class="p-2">
@@ -307,7 +407,7 @@
       </section>
       <section
         id="infrastructure"
-        class="bg-redOrangeDark text-redOrangeLight2 p-4 sm:px-8 lg:px-0 lg:content-center xl:py-8 2xl:py-14"
+        class="bg-redOrangeDark text-redOrangeLight2 p-4 mt-6 sm:px-8 lg:px-0 lg:content-center xl:py-8 2xl:py-14 2xl:mt-10"
       >
         <div
           class="grid grid-cols-1 text-center mt-6 lg:grid-cols-2 lg:gap-x-10 lg:mt-0 lg:py-5 xl:py-0"
@@ -315,9 +415,9 @@
           <div class="hidden lg:flex lg:w-full lg:h-full">
             <figure class="h-full w-full">
               <img
-                src="./src/images/background-sidebar-section-3.jpg"
-                alt="Background visual"
-                class="w-full h-full object-cover object-right rounded-r-xl shadow-2xl"
+                src="./src/images/infrastructure-main-room.jpg"
+                alt="Imagem do consultório Effect Podologia"
+                class="w-full h-full object-cover rounded-r-xl shadow-2xl"
               />
             </figure>
           </div>
@@ -334,8 +434,8 @@
             </h3>
             <figure class="mt-8 lg:hidden">
               <img
-                src="./src/images/background-sidebar-section-3.jpg"
-                alt="Foto do salão Effect Podologia"
+                src="./src/images/infrastructure-main-room.jpg"
+                alt="Imagem do consultório Effect Podologia"
                 class="w-full h-full object-cover rounded-xl shadow-2xl"
               />
             </figure>
@@ -366,7 +466,7 @@
           </div>
         </div>
       </section>
-      <section id="reviews" class="p-4 sm:px-8">
+      <section id="reviews" class="p-4 mt-6 sm:px-8 2xl:mt-10">
         <div
           class="grid grid-cols-1 place-items-center text-center text-redOrangeDark"
         >
@@ -392,7 +492,7 @@
             empresa.
           </p>
         </div>
-        <div class="pt-16 space-y-12 lg:place-items-center 2xl:space-y-14">
+        <div class="pt-16 space-y-10 lg:place-items-center 2xl:space-y-14">
           <div
             class="relative reviewCard lg:hiddenReviewCard lg:reviewLeftCard"
           >
@@ -404,7 +504,7 @@
               />
             </figure>
             <div>
-              <h3 class="my-3 font-bold text-xl pt-5 2xl:text-2xl">
+              <h3 class="font-bold text-xl pt-5 2xl:text-2xl">
                 Nathalia Oliveira
               </h3>
               <p class="2xl:text-lg">
@@ -427,7 +527,7 @@
               />
             </figure>
             <div>
-              <h3 class="my-3 font-bold text-xl pt-5 2xl:text-2xl">
+              <h3 class="font-bold text-xl pt-5 2xl:text-2xl">
                 Ana Paula Souza
               </h3>
               <p class="2xl:text-lg">
@@ -469,9 +569,7 @@
               />
             </figure>
             <div>
-              <h3 class="my-3 font-bold text-xl pt-5 2xl:text-2xl">
-                Juciara Lopes
-              </h3>
+              <h3 class="font-bold text-xl pt-5 2xl:text-2xl">Juciara Lopes</h3>
               <p class="2xl:text-lg">
                 Atendimento excelente, profissional capacitada e super
                 acolhedora , instrumentos todos esterilizados ambiente limpo , a
@@ -481,7 +579,10 @@
           </div>
         </div>
       </section>
-      <section id="location" class="pt-10 px-4 lg:px-10 xl:px-16">
+      <section
+        id="location"
+        class="py-10 px-4 lg:px-10 xl:px-16 my-28"
+      >
         <div class="h-full w-full grid grid-cols-1 lg:grid-cols-2">
           <div class="lg:pr-16 xl:pr-20">
             <div class="text-redOrangeDark text-center lg:text-left">
@@ -521,7 +622,7 @@
             <div class="hidden lg:block w-2/5">
               <figure class="w-full h-full">
                 <img
-                  src="./src/images/logos/dark-terracotta-horizontal.png"
+                  src="./src/images/terracotta-horizontal.png"
                   alt="Logo da Effect Podologia, representando saúde e cuidado com os pés"
                   class="w-full h-full object-cover"
                 />
@@ -556,19 +657,127 @@
         </div>
       </section>
     </main>
-    <footer
-      class="text-center p-3 bg-gradient-to-b from-redOrangeLight1 to-redOrangeLight2 text-redOrange2 mt-16 2xl:text-lg"
-    >
-      <p>© 2025 Effect Podologia. Todos os direitos reservados.</p>
-      <p>
-        Desenvolvido por
-        <a
-          href="https://wa.me/5512997436507"
-          target="_blank"
-          class="font-bold hover:text-redOrangeLight3"
-          >João Vitor Mira</a
-        >
-      </p>
+    <footer>
+      <div class="bg-redOrange2 mt-8">
+        <div class="flex justify-center xl:justify-normal">
+          <div
+            class="flex flex-col py-20 place-content-center place-items-center xl:py-0 w-full"
+          >
+            <div
+              class="grid grid-cols-1 lg:grid-cols-3 lg:w-[85%] lg:px-8 xl:mb-16"
+            >
+              <div class="hidden text-center lg:block mb-8">
+                <span
+                  class="text-5xl text-redOrangeLight1 2xl:text-6xl"
+                >
+                  <i
+                    class="fa-solid fa-location-dot mb-4"
+                    aria-hidden="true"
+                  ></i>
+                </span>
+                <address class="not-italic text-redOrangeLight1">
+                  <p>Rua Heitor de Andrade, 619</p>
+                  <p>Jardim das Industrias - São José dos Campos, SP</p>
+                </address>
+              </div>
+              <div class="text-center mb-8">
+                <a
+                  href="https://www.instagram.com/podologiaeffect/"
+                  target="_blank"
+                  class="text-redOrangeLight1 hover:text-redOrangeLight3 transition duration-300"
+                >
+                  <span class="text-5xl 2xl:text-6xl">
+                    <i
+                      class="fa-brands fa-instagram mb-4"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <p>@podologiaeffect</p>
+                </a>
+              </div>
+              <div class="text-center mb-8 text-redOrangeLight1">
+                <a
+                  href="https://wa.me//5512997095226?text=Olá,%20tenho%20interesse%20em%20agendar%20uma%20consulta!"
+                  target="_blank"
+                  class="hover:text-redOrangeLight3 transition duration-300"
+                >
+                  <span class="text-5xl 2xl:text-6xl">
+                    <i
+                      class="fa-brands fa-whatsapp mb-4"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <p>(12) 99709-5226</p>
+                </a>
+                <p class="mt-4">Terça à Sexta das 9h às 19h</p>
+                <p>Sábado e Domingo - Fechado</p>
+              </div>
+              <div class="lg:hidden">
+                <span
+                  class="block w-[90%] h-[1px] m-auto bg-redOrangeLight3"
+                ></span>
+                <div class="text-center my-8 text-redOrangeLight1">
+                  <p class="text-lg font-bold">Formas de pagamento</p>
+                  <p>Aceitamos todos os cartões de crédito e débito.</p>
+                  <p>Aceitamos Pix.</p>
+                </div>
+                <span
+                  class="block w-[90%] h-[1px] m-auto bg-redOrangeLight3"
+                ></span>
+                <div class="text-center mt-8 text-redOrangeLight1 px-2">
+                  <p>© 2025 Effect Podologia. Todos os direitos reservados.</p>
+                  <p>
+                    Desenvolvido por
+                    <a
+                      href="https://wa.me/5512997436507"
+                      target="_blank"
+                      class="font-bold"
+                      >João Vitor Mira</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="hidden lg:block w-full">
+              <span
+                class="block w-[95%] h-[1px] m-auto bg-redOrangeLight3"
+              ></span>
+              <div
+                class="flex justify-between px-12 mt-8 text-redOrangeLight1 xl:px-24"
+              >
+                <div>
+                  <p class="text-lg font-bold">Formas de pagamento</p>
+                  <p>Aceitamos todos os cartões de crédito e débito.</p>
+                  <p>Aceitamos Pix.</p>
+                </div>
+                <div>
+                  <p>© 2025 Effect Podologia. Todos os direitos reservados.</p>
+                  <p>
+                    Desenvolvido por
+                    <a
+                      href="https://wa.me/5512997436507"
+                      target="_blank"
+                      class="font-bold hover:text-redOrangeLight3 transition duration-300"
+                      >João Vitor Mira</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden py-16 lg:block lg:w-[20%] place-content-center xl:py-0"
+          >
+            <figure class="h-[90%] w-full 2xl:h-[80%]">
+              <img
+                src="./src/images/footer-foot.png"
+                alt="Background visual"
+                class="w-full h-full object-fill"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
     </footer>
     <span
       class="hidden lg:block fixed right-2 bottom-2 z-10 text-3xl text-redOrangeLight2 hover:text-green-500 hover:scale-105 transform transition duration-300 lg:text-4xl 2xl:text-5xl"
